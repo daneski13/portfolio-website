@@ -1,0 +1,122 @@
+<script lang="ts">
+	import type { ProjectData } from './data';
+
+	export let data: ProjectData;
+	const { content, title, date, isUpdated, updated, image, description, code } = data;
+</script>
+
+<svelte:head>
+	<title>{title}</title>
+	<meta name="description" content={description} />
+</svelte:head>
+
+<div class="wrapper">
+	<article class="project">
+		<img class="project__cover-img" src={image} alt="Article cover" />
+		<h1 class="project__title">{title}</h1>
+		<div class="project__meta">
+			<span>
+				<p class="project__meta__date"><b>Published:</b> {date}</p>
+				{#if isUpdated}
+					<p class="project__meta__date"><b>Updated:</b> {updated}</p>
+				{/if}
+			</span>
+			<a class="project__meta__source" href={code} target="_blank" rel="external">View Project</a>
+		</div>
+		<svelte:component this={content} class="project__content" />
+	</article>
+</div>
+
+<style lang="scss">
+	@import 'src/lib/styles/mixins.scss';
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+
+	.wrapper {
+		// offsets the page so the header bar doesn't hide stuff
+		padding-top: var(--header-height);
+		margin-top: calc(var(--header-height) * -1);
+	}
+
+	.project {
+		font-size: 125%;
+		@include margin-horiz;
+		margin-top: 7rem;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 300;
+
+		&__cover-img {
+			max-width: 100%;
+			border: 1px solid;
+			display: block;
+			margin: 0 auto;
+		}
+
+		&__title {
+			margin-bottom: 0.5rem;
+			// font-size: 3.5rem;
+			font-weight: 500;
+		}
+
+		&__meta {
+			margin: 3em 0em 5em 0em;
+			gap: 2rem;
+			display: flex;
+			justify-content: space-evenly;
+			flex-wrap: wrap;
+
+			&:before {
+				@include pseudo;
+				width: 30%;
+				max-width: 15em;
+				height: 0.15em;
+				background-color: rgb(191, 191, 191);
+				margin: -1em 0;
+			}
+
+			&__date {
+				font-size: 0.85em;
+				margin: 0;
+			}
+
+			&__source {
+				align-self: center;
+				font-size: 0.8em;
+				background-color: rgb(66, 66, 66);
+				color: white;
+				padding: 0.5rem 1rem;
+				border-radius: 100px;
+
+				&:hover {
+					background-color: var(--primary-color);
+					color: black;
+				}
+			}
+		}
+	}
+
+	// Shows link svg to header id, like Github
+	:global(.autolink_image) {
+		margin-left: -4%;
+		padding-right: 0.2rem;
+		width: 1.5rem;
+		visibility: hidden;
+	}
+
+	:global(h2:hover .autolink_image) {
+		visibility: visible;
+	}
+
+	@media only screen and (min-width: 768px) {
+		.project {
+			max-width: 700px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+
+	@media (hover: none) {
+		:global(.autolink_image) {
+			visibility: visible;
+		}
+	}
+</style>

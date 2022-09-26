@@ -1,0 +1,42 @@
+// @import './vars.scss';
+
+@mixin pseudo($display: block, $pos: absolute, $content: '') {
+	content: $content;
+	display: $display;
+	position: $pos;
+}
+
+@mixin shadow($x: 0px, $y: 5px, $blur: 10px) {
+	box-shadow: $x $y $blur 0px rgba(0, 0, 0, 0.3);
+}
+
+@mixin margin-horiz {
+	margin-left: var(--margin-left-right);
+	margin-right: var(--margin-left-right);
+}
+
+@mixin flex-column {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin flex-center-column {
+	@include flex-center;
+	flex-direction: column;
+}
+
+@mixin flex-center-vert {
+	display: flex;
+	align-items: center;
+}
+
+@mixin flex-center-horiz {
+	display: flex;
+	justify-content: center;
+}

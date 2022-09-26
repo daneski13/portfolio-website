@@ -1,0 +1,83 @@
+:root {
+	--primary-color: hsl(196, 100%, 70%);
+	--primary-color-opacity: hsla(196, 100%, 70%, 0.5);
+	--background-color: #f9f9f9;
+	--margin-left-right: 7vw;
+	--header-height: 5.75rem;
+	min-width: 280px;
+	color: rgb(50, 50, 50);
+	font-family: sans-serif;
+
+	code {
+		background-color: lightgray;
+	}
+
+	svg {
+		max-width: 100%;
+	}
+
+	// Heading sizes
+	$base-font-size: 1rem;
+	$heading-scale: 0.2; // amount of headings grow from h6 to h1
+	@for $i from 1 through 6 {
+		h#{$i} {
+			font-size: $base-font-size + $heading-scale * (6 - $i);
+		}
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	:root {
+		--margin-left-right: 10vw;
+		--header-height: 6.75rem;
+
+		// Heading sizes
+		$base-font-size: 1rem;
+		$heading-scale: 0.5;
+		@for $i from 1 through 6 {
+			h#{$i} {
+				font-size: $base-font-size + $heading-scale * (6 - $i);
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1705px) {
+	:root {
+		/* 
+		Want a max width of 1770px with a margin of 10% viewport,like previous 
+		media query. Beyond 1770px, I want the content width to be consistent without 
+		messing up backgrounds, so the margin needs to dynamically expand with the viewport.
+
+		Margin on left and right combined is total "nothing space", 
+		10% of margin on either side of 1770px is 20% of total
+		"nothing space". So at 1770px the actual width of the content
+		is 80% of 1770px. 1770px * 80% is the desired content width (1416px).
+		desired content width = content width * margin at max width * 2
+
+		To calculate the total "nothing space" take the viewport 
+		and subtract it by the desired content width.
+		nothing space = viewport - desired content width
+
+		The margin is just the "nothing space" divided by 2.
+		margin = "nothing space" / 2
+
+		The equation to dynamically calculate the margin:
+			Note that we must use the decimal equivalent of the margin 
+			"percentage"  because in CSS percentages are relative size values. 
+			0.8 is not the same as 80% in CSS code.
+
+		calc((100vw - (<max width> * (1 - <margin at max width> * 2))) / 2)
+
+		In my case:
+		calc((100vw - (1770px * (1 - 0.1 * 2))) / 2)
+			which simplifies:
+			calc((100vw - (1770px * (1 - 0.2))) / 2)
+			calc((100vw - (1770px * 0.8)) / 2)
+			calc((100vw - 1416px) / 2)
+			calc(50vw - 708px)
+		*/
+
+		--margin-left-right: calc(50vw - 682px);
+	}
+}
