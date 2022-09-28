@@ -29,7 +29,8 @@ export async function load({ params }) {
 		date: meta.date,
 		isUpdated: isUpdated,
 		updated: meta.updated,
-		image: meta.image,
+		card: meta.card,
+		cover: meta.cover,
 		description: meta.description,
 		code: meta.code,
 		slug: params.slug

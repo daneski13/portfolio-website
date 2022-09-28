@@ -39,4 +39,3 @@ jobs:
           branch: main # branch on repo
           commit-message: Update
           clean-exclude: README.md
-          single-commit: true

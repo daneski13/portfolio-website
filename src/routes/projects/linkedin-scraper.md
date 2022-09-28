@@ -2,7 +2,8 @@
 title: LinkedIn Job Scraper
 date: '2022-09-25'
 # updated:
-image: /projects/linkedin-scraper/cover.png
+card: /projects/linkedin-scraper/card.webp
+cover: /projects/linkedin-scraper/cover.webp
 description: Web scraper for LinkedIn job postings
 code: https://github.com/Daneski13/linkedin-job-scraper
 ---

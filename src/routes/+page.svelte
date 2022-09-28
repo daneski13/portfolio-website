@@ -51,7 +51,7 @@
 						<li>
 							<Card
 								title={project.meta.title}
-								image={project.meta.image}
+								image={project.meta.card}
 								url={project.path}
 								description={project.meta.description}
 							/>

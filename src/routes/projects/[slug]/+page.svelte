@@ -2,7 +2,7 @@
 	import type { ProjectData } from './data';
 
 	export let data: ProjectData;
-	const { content, title, date, isUpdated, updated, image, description, code } = data;
+	const { content, title, date, isUpdated, updated, cover, description, code } = data;
 </script>
 
 <svelte:head>
@@ -12,7 +12,7 @@
 
 <div class="wrapper">
 	<article class="project">
-		<img class="project__cover-img" src={image} alt="Article cover" />
+		<img class="project__cover-img" src={cover} alt="Article cover" />
 		<h1 class="project__title">{title}</h1>
 		<div class="project__meta">
 			<span>

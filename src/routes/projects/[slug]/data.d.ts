@@ -6,7 +6,8 @@ export type ProjectData = {
 	date: string;
 	isUpdated: boolean;
 	updated: string;
-	image: string;
+	card: string;
+	cover: string;
 	description: string;
 	code: string;
 	slug: string;
