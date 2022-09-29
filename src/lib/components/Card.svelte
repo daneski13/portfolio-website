@@ -48,12 +48,11 @@
 			// Both hover slider and it's text
 			&::after,
 			.card__info {
-				width: 5.5%;
-				height: 5%;
+				width: 0%;
+				height: 0%;
 				bottom: 0;
 				right: 0;
-				visibility: hidden;
-				transition: all 0.3s ease-in, font-size 0.3s cubic-bezier(0, -1.6, 1, 1.6);
+				transition: all 0.3s ease-in;
 			}
 
 			// Hover slider
@@ -68,7 +67,7 @@
 			.card__info {
 				position: absolute;
 				z-index: 1;
-				font-size: 0px;
+				overflow: hidden;
 
 				&__desc {
 					margin: 1.5rem;
@@ -89,8 +88,6 @@
 				.card__info {
 					width: 100%;
 					height: 100%;
-					visibility: visible;
-					font-size: 1rem;
 				}
 			}
 		}
