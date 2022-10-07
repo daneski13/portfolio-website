@@ -92,19 +92,20 @@
 			&_top,
 			&_bottom {
 				display: block;
-				width: 0%;
 				overflow: hidden;
 			}
 
 			&_top {
 				border-right: 0.1em solid white;
 				max-width: 4.4em;
-				animation: typing_top 1s steps(20, end) both;
+				width: 10ch;
+				animation: typing_top 0.8s steps(8) both;
 			}
 
 			&_bottom {
 				max-width: 6.2em;
-				animation: typing 1.5s steps(30, end) both 1s, blink 1s infinite 1.5s;
+				width: 12ch;
+				animation: typing 1.4s steps(14) both 0.8s, blink 1s infinite 2.2s;
 			}
 
 			&::after {
@@ -121,7 +122,7 @@
 			position: absolute;
 			bottom: 5vh;
 			right: var(--margin-left-right);
-			animation: up-down 1s ease-out infinite 2.7s;
+			animation: up-down 1s ease-out infinite 3.2s;
 			visibility: hidden;
 		}
 	}
@@ -183,7 +184,6 @@
 
 		100% {
 			border-right: 0.1em solid white;
-			width: 100%;
 		}
 	}
 
@@ -193,20 +193,15 @@
 		}
 
 		99% {
-			width: 99%;
 			border-right: 0.1em solid white;
 		}
 		100% {
-			width: 100%;
 			border: none;
 		}
 	}
 
 	@keyframes blink {
-		from {
-			border-color: white;
-		}
-		to {
+		50% {
 			border-color: transparent;
 		}
 	}
