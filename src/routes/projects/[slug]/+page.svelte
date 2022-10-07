@@ -10,7 +10,7 @@
 	<meta name="description" content={description} />
 </svelte:head>
 
-<div class="wrapper">
+<main>
 	<article class="project">
 		<img class="project__cover-img" src={cover} alt="Article cover" />
 		<h1 class="project__title">{title}</h1>
@@ -23,19 +23,15 @@
 			</span>
 			<a class="project__meta__source" href={code} target="_blank" rel="external">View Project</a>
 		</div>
-		<svelte:component this={content} class="project__content" />
+		<div class="project__content">
+			<svelte:component this={content} />
+		</div>
 	</article>
-</div>
+</main>
 
 <style lang="scss">
 	@import 'src/lib/styles/mixins.scss';
 	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
-
-	.wrapper {
-		// offsets the page so the header bar doesn't hide stuff
-		padding-top: var(--header-height);
-		margin-top: calc(var(--header-height) * -1);
-	}
 
 	.project {
 		font-size: 125%;
@@ -53,7 +49,6 @@
 
 		&__title {
 			margin-bottom: 0.5rem;
-			// font-size: 3.5rem;
 			font-weight: 500;
 		}
 
@@ -82,9 +77,9 @@
 				align-self: center;
 				font-size: 0.8em;
 				background-color: rgb(66, 66, 66);
-				color: white;
 				padding: 0.5rem 1rem;
 				border-radius: 100px;
+				color: white;
 
 				&:hover {
 					background-color: var(--primary-color);
@@ -92,18 +87,58 @@
 				}
 			}
 		}
+
+		&__content {
+			:global(a) {
+				color: hsl(196, 100%, 40%);
+			}
+		}
+
+		@for $i from 2 through 6 {
+			:global(h#{$i}) {
+				font-size: 1rem + 0.2 * (6 - $i);
+
+				// offsets each heading so the header bar doesn't hide stuff
+				padding-top: var(--header-height);
+				margin-top: calc(var(--header-height) * -1);
+				display: block;
+			}
+		}
+	}
+
+	// Table formatting
+	:global(th, td) {
+		border: 1px solid;
+	}
+
+	:global(table) {
+		border-collapse: collapse;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 1em;
+		display: block;
+    	width: max-content;
+    	max-width: 100%;
+    	overflow: auto;
+	}
+
+	:global(th, td) {
+		padding: 0.2em 0.5em;
 	}
 
 	// Shows link svg to header id, like Github
 	:global(.autolink_image) {
 		margin-left: -4%;
 		padding-right: 0.2rem;
-		width: 1.5rem;
+		width: 1.2rem;
 		visibility: hidden;
+		color: black;
 	}
 
-	:global(h2:hover .autolink_image) {
-		visibility: visible;
+	@for $i from 2 through 6 {
+		:global(h#{$i}:hover .autolink_image) {
+			visibility: visible;
+		}
 	}
 
 	@media only screen and (min-width: 768px) {
