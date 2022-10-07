@@ -117,9 +117,9 @@
 		margin-right: auto;
 		margin-bottom: 1em;
 		display: block;
-    	width: max-content;
-    	max-width: 100%;
-    	overflow: auto;
+		width: max-content;
+		max-width: 100%;
+		overflow: auto;
 	}
 
 	:global(th, td) {
