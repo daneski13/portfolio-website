@@ -8,6 +8,11 @@ description: Exploratory Data Analysis of the Entry-Level Finance Job Market
 code: https://github.com/Daneski13/Analyzing-Finance-Job-Postings
 ---
 
+<script>
+    import Image from '$lib/components/markdown/Image.svelte';
+    import Anchor from '$lib/components/markdown/Anchor.svelte';
+</script>
+
 **Technologies:**
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -40,7 +45,7 @@ As a finance and management information systems major I wanted to learn more abo
 
 ---
 
-For this project I developed a Python script, [linkedin-job-scraper](/projects/linkedin-scraper){target="_blank"}, to scrape public job listings on LinkedIn. LinkedIn is one of the most popular platforms for job seekers, making it one of the best websites to gather data on the job market.
+For this project I developed a Python script, <Anchor href="/projects/linkedin-scraper" target="_blank">linkedin-job-scraper</Anchor>, to scrape public job listings on LinkedIn. LinkedIn is one of the most popular platforms for job seekers, making it one of the best websites to gather data on the job market.
 
 ### Methodology
 
@@ -64,10 +69,6 @@ Because LinkedIn will only display up to 1000 listings per search, I was unfortu
 | job_function    | job's expected functions                          |
 | industries      | industries the company is in                      |
 
-<script>
-    import Image from '$lib/components/markdown/Image.svelte'
-</script>
-
 ## Findings
 
 ---
@@ -86,7 +87,7 @@ The states of California, New York, Texas, Illinois, and Florida have the most j
 
 <Image src='/projects/analyzing-finance-job-market/industries.webp' alt='Top 15 Industries Bar Graph' caption='Visualized with Seaborn'/>
 
-Unsurprisingly jobs directly in the financial services industry are the most common, Software development, IT, Information/Internet, and Technology make up numbers 4, 6, 12, and 13 respectively.
+Unsurprisingly jobs directly in the financial services industry are the most common, but tech is common as well. Software development, IT, Information/Internet, and Technology make up numbers 4, 6, 12, and 13 respectively.
 
 ### What skills are in demand?
 

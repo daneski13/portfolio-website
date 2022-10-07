@@ -88,12 +88,6 @@
 			}
 		}
 
-		&__content {
-			:global(a) {
-				color: hsl(196, 100%, 40%);
-			}
-		}
-
 		@for $i from 2 through 6 {
 			:global(h#{$i}) {
 				font-size: 1rem + 0.2 * (6 - $i);
