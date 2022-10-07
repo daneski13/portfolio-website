@@ -64,29 +64,33 @@ Because LinkedIn will only display up to 1000 listings per search, I was unfortu
 | job_function    | job's expected functions                          |
 | industries      | industries the company is in                      |
 
+<script>
+    import Image from '$lib/components/markdown/Image.svelte'
+</script>
+
 ## Findings
 
 ---
 
 ### Where are the most jobs located?
 
-![Top 15 Locations](/projects/analyzing-finance-job-market/locations.webp){style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;"}
+<Image src='/projects/analyzing-finance-job-market/locations.webp' alt='Top 10 Locations Bar Graph' caption='Visualized with Seaborn'/>
 
 New York City and Chicago have the greatest proportion of the jobs relative to other cities in the United States.
 
-![US States Heat Map](/projects/analyzing-finance-job-market/states.webp){style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;"}
+<Image src='/projects/analyzing-finance-job-market/states.webp' alt='US States Map' caption='Visualized with Plotly'/>
 
 The states of California, New York, Texas, Illinois, and Florida have the most jobs overall.
 
 ### Which industries have the most jobs?
 
-![Top Industries](/projects/analyzing-finance-job-market/industries.webp){style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;"}
+<Image src='/projects/analyzing-finance-job-market/industries.webp' alt='Top 15 Industries Bar Graph' caption='Visualized with Seaborn'/>
 
 Unsurprisingly jobs directly in the financial services industry are the most common, Software development, IT, Information/Internet, and Technology make up numbers 4, 6, 12, and 13 respectively.
 
 ### What skills are in demand?
 
-![Most in Demand Skills](/projects/analyzing-finance-job-market/skills.webp){style="display: block; margin-left: auto; margin-right: auto; max-width: 100%;"}
+<Image src='/projects/analyzing-finance-job-market/skills.webp' alt='Most in Demand Skills Bar Graph' caption='Visualized with Seaborn'/>
 
 Excel is the most in demand skill, being mentioned in 25% of the job descriptions. Database, and Data Analysis are second and third, both around 10%.
 
