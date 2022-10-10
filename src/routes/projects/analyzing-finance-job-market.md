@@ -11,6 +11,7 @@ code: https://github.com/Daneski13/Analyzing-Finance-Job-Postings
 <script>
     import Image from '$lib/components/markdown/Image.svelte';
     import Anchor from '$lib/components/markdown/Anchor.svelte';
+    import Plotly from '$lib/components/markdown/Plotly.svelte';
 </script>
 
 **Technologies:**
@@ -79,7 +80,7 @@ Because LinkedIn will only display up to 1000 listings per search, I was unfortu
 
 New York City and Chicago have the greatest proportion of the jobs relative to other cities in the United States.
 
-<Image src='/projects/analyzing-finance-job-market/states.webp' alt='US States Map' caption='Visualized with Plotly'/>
+<Plotly backupImageSrc='/projects/analyzing-finance-job-market/states.webp' src='/projects/analyzing-finance-job-market/states.html' alt='Job Listings by State Map' caption='Visualized with Plotly'/>
 
 The states of California, New York, Texas, Illinois, and Florida have the most jobs overall.
 
