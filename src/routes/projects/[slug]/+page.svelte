@@ -66,6 +66,7 @@
 				height: 0.15em;
 				background-color: rgb(191, 191, 191);
 				margin: -1em 0;
+				border-radius: 3px;
 			}
 
 			&__date {
@@ -91,11 +92,11 @@
 		@for $i from 2 through 6 {
 			:global(h#{$i}) {
 				font-size: 1rem + 0.2 * (6 - $i);
+				margin-bottom: 0.8em;
 
 				// offsets each heading so the header bar doesn't hide stuff
 				padding-top: var(--header-height);
 				margin-top: calc(var(--header-height) * -1);
-				display: block;
 			}
 		}
 	}
@@ -120,19 +121,42 @@
 		padding: 0.2em 0.5em;
 	}
 
-	// Shows link svg to header id, like Github
+	// Horizontal line style
+	:global(hr) {
+		color: rgb(76, 76, 76);
+		background-color: rgb(76, 76, 76);
+		border-width: 0;
+		border-radius: 5px;
+		height: 4px;
+		margin-bottom: 2em;
+	}
+
+	// Link svg to header id, like Github
 	:global(.autolink_image) {
-		margin-left: -4%;
+		margin-left: -1.4rem;
 		padding-right: 0.2rem;
 		width: 1.2rem;
 		visibility: hidden;
 		color: black;
 	}
 
+	// Show the link svg on hover of the heading
 	@for $i from 2 through 6 {
 		:global(h#{$i}:hover .autolink_image) {
 			visibility: visible;
 		}
+	}
+
+	// Like github show a line after h2 headings
+	:global(.h-2::after) {
+		@include pseudo;
+		position: relative;
+		margin-top: 0.3em;
+		margin-bottom: -0.1em;
+		height: 1px;
+		width: 100%;
+		border-radius: 1px;
+		background-color: #bdbdbd;
 	}
 
 	@media only screen and (min-width: 768px) {
@@ -140,12 +164,6 @@
 			max-width: 700px;
 			margin-left: auto;
 			margin-right: auto;
-		}
-	}
-
-	@media (hover: none) {
-		:global(.autolink_image) {
-			visibility: visible;
 		}
 	}
 </style>

@@ -5,6 +5,7 @@ import { mdsvex } from 'mdsvex';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkAttr from 'remark-attr';
+import rehypeAddClasses from 'rehype-add-classes';
 import { s } from 'hastscript';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -46,6 +47,12 @@ const config = {
 								})
 							)
 						]
+					}
+				],
+				[
+					rehypeAddClasses,
+					{
+						h2: 'h-2'
 					}
 				]
 			]

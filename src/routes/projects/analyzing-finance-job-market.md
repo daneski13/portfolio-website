@@ -44,8 +44,6 @@ As a finance and management information systems major I wanted to learn more abo
 
 ## Data Collection
 
----
-
 For this project I developed a Python script, <Anchor href="/projects/linkedin-scraper" target="_blank">linkedin-job-scraper</Anchor>, to scrape public job listings on LinkedIn. LinkedIn is one of the most popular platforms for job seekers, making it one of the best websites to gather data on the job market.
 
 ### Methodology
@@ -71,8 +69,6 @@ Because LinkedIn will only display up to 1000 listings per search, I was unfortu
 | industries      | industries the company is in                      |
 
 ## Findings
-
----
 
 ### Where are the most jobs located?
 

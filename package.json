@@ -31,6 +31,7 @@
 		"postcss": "^8.4.16",
 		"prettier": "^2.6.2",
 		"prettier-plugin-svelte": "^2.7.0",
+		"rehype-add-classes": "github:tycol7/rehype-add-classes",
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-slug": "^5.0.1",
 		"remark-attr": "^0.11.1",
