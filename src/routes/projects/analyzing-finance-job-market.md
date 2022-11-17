@@ -1,7 +1,7 @@
 ---
 title: Analyzing Finance Job Postings
 date: '2022-10-06'
-# updated:
+updated: '2022-11-17'
 card: /projects/analyzing-finance-job-market/card.webp
 cover: /projects/analyzing-finance-job-market/cover.webp
 description: Exploratory Data Analysis of the Entry-Level Finance Job Market
@@ -74,26 +74,32 @@ Because LinkedIn will only display up to 1000 listings per search, I was unfortu
 
 <Image src='/projects/analyzing-finance-job-market/locations.webp' alt='Top 10 Locations Bar Graph' caption='Visualized with Seaborn'/>
 
-New York City and Chicago have the greatest proportion of the jobs relative to other cities in the United States.
+New York City and Chicago have the greatest proportion of the jobs relative to other cities in the United States. Since New York City and Chicago have major US security markets, it is not surprising that those 2 cities would have the greatest number of jobs in finance.
 
 <Plotly backupImageSrc='/projects/analyzing-finance-job-market/states.webp' src='/projects/analyzing-finance-job-market/states.html' alt='Job Listings by State Map' caption='Visualized with Plotly'/>
 
-The states of California, New York, Texas, Illinois, and Florida have the most jobs overall.
+The states of California, New York, Texas, Illinois, and Florida have the most jobs overall. New York's and Illinois' jobs are being driven by New York City and Chicago. Los Angeles and San Francisco have a large share of California's jobs, both of which are also major financial centers in the US. 
+
+Houston, another large financial center, is the only city in Texas to crack the top 10, however only accounts for roughly a fifth of Texas jobs. None of Florida's cities cracked the top 10. Thus, there is much more variation in location within Texas and Florida compared to the other top states.
+
+If looking for a job in a major financial district, a job search should be targeted in New York City, Chicago, Los Angeles, and San Francisco. Otherwise, Texas and Florida have lots of demand for finance professionals with more locations to seek out.
 
 ### Which industries have the most jobs?
 
 <Image src='/projects/analyzing-finance-job-market/industries.webp' alt='Top 15 Industries Bar Graph' caption='Visualized with Seaborn'/>
 
-Unsurprisingly jobs directly in the financial services industry are the most common, but tech is common as well. Software development, IT, Information/Internet, and Technology make up numbers 4, 6, 12, and 13 respectively.
+Staffing/ Recruiting is interestingly the most common industry making postings. This is likely due to staffing firms making many postings, as several of the most repeated companies in the dataset are staffing firms.
+
+Besides Staffing/ Recruiting, many of the top 15 industries are directly in the financial industry as expected but tech is common as well. Software development, IT, Information/Internet, and Technology where information systems domain knowledge may be useful make up numbers 4, 6, 12, and 13 respectively.
 
 ### What skills are in demand?
 
 <Image src='/projects/analyzing-finance-job-market/skills.webp' alt='Most in Demand Skills Bar Graph' caption='Visualized with Seaborn'/>
 
-Excel is the most in demand skill, being mentioned in 25% of the job descriptions. Database, and Data Analysis are second and third, both around 10%.
+Excel is the most in demand skill, being mentioned in 25% of the job descriptions. Database, and data analysis are second and third, both around 10%. SQL, Tableau, and Power BI were mentioned in about 1% of the postings.
 
-SQL, Tableau, and Power BI were mentioned in about 1% of the postings, however these skills may set a job candidate apart from others seeking the same role.
+Based on this data, applicants should focus mainly on Excel with database and data analysis secondary. However SQL, Tableau, and Power BI may set one applicant apart from another.
 
 ### Would my MIS degree make me more marketable?
 
-Database knowledge, data analysis skills, and SQL are in demand skills and are covered in the MIS degree program. Also, technology related industries are common in the top 15 industries. In these industries information systems domain knowledge may be useful.
+Database knowledge, data analysis, and SQL are in-demand and are taught within the MIS degree program. Also, technology related industries are common in the top 15 industries, where information systems domain knowledge will be useful.
