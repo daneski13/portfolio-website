@@ -78,7 +78,7 @@ New York City and Chicago have the greatest proportion of the jobs relative to o
 
 <Plotly backupImageSrc='/projects/analyzing-finance-job-market/states.webp' src='/projects/analyzing-finance-job-market/states.html' alt='Job Listings by State Map' caption='Visualized with Plotly'/>
 
-The states of California, New York, Texas, Illinois, and Florida have the most jobs overall. New York's and Illinois' jobs are being driven by New York City and Chicago. Los Angeles and San Francisco have a large share of California's jobs, both of which are also major financial centers in the US. 
+The states of California, New York, Texas, Illinois, and Florida have the most jobs overall. New York's and Illinois' jobs are being driven by New York City and Chicago. Los Angeles and San Francisco have a large share of California's jobs, both of which are also major financial centers in the US.
 
 Houston, another large financial center, is the only city in Texas to crack the top 10, however only accounts for roughly a fifth of Texas jobs. None of Florida's cities cracked the top 10. Thus, there is much more variation in location within Texas and Florida compared to the other top states.
 
