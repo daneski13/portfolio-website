@@ -46,16 +46,15 @@
 				{#each data.projects as project, i}
 					<Saos
 						bottom={-1000}
+						top={50}
 						animation={'slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
 					>
-						<li>
-							<Card
-								title={project.meta.title}
-								image={project.meta.card}
-								url={project.path}
-								description={project.meta.description}
-							/>
-						</li>
+						<Card
+							title={project.meta.title}
+							image={project.meta.card}
+							url={project.path}
+							description={project.meta.description}
+						/>
 					</Saos>
 				{/each}
 			</ul>
