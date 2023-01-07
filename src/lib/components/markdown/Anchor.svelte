@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let href: string;
-	export let target: string;
+	export let target: string = '_blank'; // Open in new tab by default
 	export let rel: string = '';
 </script>
 
