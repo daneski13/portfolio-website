@@ -1,7 +1,7 @@
 ---
 title: This Website
 date: '2022-09-23'
-# updated:
+updated: '2023-01-25'
 card: /projects/portfolio-website/card.webp
 cover: /projects/portfolio-website/cover.webp
 description: This website, my portfolio where I showcase my work.
@@ -28,6 +28,6 @@ _JavaScript Framework:_ SvelteKit
 
 ---
 
-This site is built using SvelteKit which pre-renders the pages into static HTML and CSS at build time from Svelte components, SASS, TypeScript, and Markdown files. It does not depend on any client-side Javascript besides for some fancy transitions.
+This site is built using SvelteKit which pre-renders the pages into static HTML and CSS at build time from Svelte components, SASS, TypeScript, and Markdown files. It does not depend on any client-side Javascript.
 
 Any commits to the source's repository triggers a GitHub action that automatically rebuilds the site and deploys it to GitHub pages.

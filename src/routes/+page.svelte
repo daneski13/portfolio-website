@@ -1,6 +1,5 @@
 <script lang="ts">
 	import Card from '$lib/components/Card.svelte';
-	import Saos from 'saos';
 
 	export let data;
 </script>
@@ -36,29 +35,18 @@
 	</section>
 
 	<section class="projects" id="projects">
-		<Saos
-			bottom={-1000}
-			animation={'slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
-		>
-			<a href="/#projects"><h2 class="subtitle">Projects</h2></a>
+		<a href="/#projects"><h2 class="subtitle">Projects</h2></a>
 
-			<ul class="projects__items">
-				{#each data.projects as project, i}
-					<Saos
-						bottom={-1000}
-						top={50}
-						animation={'slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both'}
-					>
-						<Card
-							title={project.meta.title}
-							image={project.meta.card}
-							url={project.path}
-							description={project.meta.description}
-						/>
-					</Saos>
-				{/each}
-			</ul>
-		</Saos>
+		<ul class="projects__items">
+			{#each data.projects as project}
+				<Card
+					title={project.meta.title}
+					image={project.meta.card}
+					url={project.path}
+					description={project.meta.description}
+				/>
+			{/each}
+		</ul>
 	</section>
 </main>
 
