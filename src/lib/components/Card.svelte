@@ -7,7 +7,10 @@
 
 <article class="card">
 	<div class="card__container">
-		<img class="card__image" alt="{title} Preview Image" src={image} />
+		<!-- Wrapping the image in a div fixes some weird bug on mobile where its border radius is wonky -->
+		<div>
+			<img class="card__image" alt="{title} Preview Image" src={image} />
+		</div>
 		<div class="card__title-container">
 			<h3 class="card__title">{title}</h3>
 		</div>
