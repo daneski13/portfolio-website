@@ -123,11 +123,10 @@
 
 	// Horizontal line style
 	:global(hr) {
-		color: rgb(76, 76, 76);
 		background-color: rgb(76, 76, 76);
 		border-width: 0;
-		border-radius: 5px;
-		height: 4px;
+		border-radius: 1rem;
+		height: 2px;
 		margin-bottom: 2em;
 	}
 
