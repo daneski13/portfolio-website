@@ -22,9 +22,9 @@ My portfolio site.
 ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-**Frameworks/ Libraries:**
+**JavaScript Framework:**
 
-_JavaScript Framework:_ SvelteKit
+SvelteKit
 
 ---
 

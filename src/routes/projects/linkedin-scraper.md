@@ -15,11 +15,13 @@ code: https://github.com/Daneski13/linkedin-job-scraper
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-**Frameworks/ Libraries:**
+**Web Scraping Framework:**
 
-_Web Scraping:_ Selenium WebDriver
+Selenium WebDriver
 
-_Data Structuring and Manipulation:_ pandas, numpy
+**Data Structuring and Manipulation Libraries:**
+
+pandas, numpy
 
 ---
 
