@@ -37,7 +37,7 @@
 	<section class="projects" id="projects">
 		<a href="/#projects"><h2 class="subtitle">Projects</h2></a>
 
-		<ul class="projects__items">
+		<div class="projects__items">
 			{#each data.projects as project}
 				<Card
 					title={project.meta.title}
@@ -46,7 +46,7 @@
 					description={project.meta.description}
 				/>
 			{/each}
-		</ul>
+		</div>
 	</section>
 </main>
 

@@ -98,6 +98,11 @@
 				padding-top: var(--header-height);
 				margin-top: calc(var(--header-height) * -1);
 			}
+
+			// Show the link svg on hover of the heading
+			:global(h#{$i}:hover .autolink_image) {
+				visibility: visible;
+			}
 		}
 	}
 
@@ -137,13 +142,6 @@
 		width: 1.2rem;
 		visibility: hidden;
 		color: black;
-	}
-
-	// Show the link svg on hover of the heading
-	@for $i from 2 through 6 {
-		:global(h#{$i}:hover .autolink_image) {
-			visibility: visible;
-		}
 	}
 
 	// Like github show a line after h2 headings

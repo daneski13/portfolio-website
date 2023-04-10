@@ -1,7 +1,7 @@
-import type { ConstructorOfATypedSvelteComponent } from 'svelte';
+import type { SvelteComponentTyped } from 'svelte';
 
 export type ProjectData = {
-	content: ConstructorOfATypedSvelteComponent;
+	content: SvelteComponentTyped;
 	title: string;
 	date: string;
 	isUpdated: boolean;
