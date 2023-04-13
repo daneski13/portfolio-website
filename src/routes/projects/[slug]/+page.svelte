@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-	<title>{title}</title>
+	<title>{title} - Projects</title>
 	<meta name="description" content={description} />
 </svelte:head>
 
@@ -31,7 +31,6 @@
 
 <style lang="scss">
 	@import 'src/lib/styles/mixins.scss';
-	@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
 
 	.project {
 		font-size: 125%;

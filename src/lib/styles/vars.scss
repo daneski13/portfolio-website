@@ -17,11 +17,10 @@
 	}
 
 	// Heading sizes
-	$base-font-size: 1rem;
-	$heading-scale: 0.2; // amount headings grow from h6 to h1
+	$heading-scale: 0.25; // amount headings grow from h6 to h1
 	@for $i from 1 through 6 {
 		h#{$i} {
-			font-size: $base-font-size + $heading-scale * (6 - $i);
+			font-size: 1rem + $heading-scale * (6 - $i);
 		}
 	}
 }
@@ -32,11 +31,10 @@
 		--header-height: 6.75rem;
 
 		// Heading sizes
-		$base-font-size: 1rem;
-		$heading-scale: 0.4;
+		$heading-scale: 0.5;
 		@for $i from 1 through 6 {
 			h#{$i} {
-				font-size: $base-font-size + $heading-scale * (6 - $i);
+				font-size: 1rem + $heading-scale * (6 - $i);
 			}
 		}
 	}

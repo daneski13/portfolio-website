@@ -16,7 +16,7 @@
 				>Dane Skalski</span
 			>
 		</h1>
-		<a href="#projects"
+		<a href="#about"
 			><svg
 				viewBox="0 0 40 40"
 				fill="none"
@@ -34,18 +34,50 @@
 		>
 	</section>
 
-	<section class="projects" id="projects">
-		<a href="/#projects"><h2 class="subtitle">Projects</h2></a>
+	<section class="about" id="about">
+		<div class="section__container">
+			<a href="/#about"><h2 class="subtitle">About</h2></a>
 
-		<div class="projects__items">
-			{#each data.projects as project}
-				<Card
-					title={project.meta.title}
-					image={project.meta.card}
-					url={project.path}
-					description={project.meta.description}
-				/>
-			{/each}
+			<div class="about__content">
+				<p>
+					I am an honors undergraduate student in my Junior year at Washington State University
+					studying Finance and Management Information Systems (MIS).
+				</p>
+				<p>
+					I am passionate about exploring financial markets, economics, and cutting-edge
+					technologies. I also enjoy working with and learning about computers. Through coursework,
+					projects, and self-study, I have developed a solid foundation of knowledge and skills in
+					these areas. In particular, I am intrigued by the potential of data analysis and machine
+					learning to drive innovation in business contexts.
+				</p>
+				<p>
+					Looking ahead, I plan to continue expanding my knowledge and skills in data analysis,
+					machine learning, and computer science, with a focus on their applications in finance.
+					Ultimately, I hope to contribute to the success of a financial services firm or technology
+					company by applying my skills and knowledge.
+				</p>
+				<p>
+					Outside of academics and career aspirations, I enjoy watching movies and television shows,
+					playing golf, snowboarding, and staying active.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="projects" id="projects">
+		<div class="section__container">
+			<a href="/#projects"><h2 class="subtitle">Projects</h2></a>
+
+			<div class="projects__items content">
+				{#each data.projects as project}
+					<Card
+						title={project.meta.title}
+						image={project.meta.card}
+						url={project.path}
+						description={project.meta.description}
+					/>
+				{/each}
+			</div>
 		</div>
 	</section>
 </main>
@@ -57,9 +89,16 @@
 		// offsets each section so the header bar doesn't hide stuff
 		padding-top: var(--header-height);
 		margin-top: calc(var(--header-height) * -1);
+		width: 100%;
+		height: 100%;
+
+		.section__container {
+			@include margin-horiz;
+		}
 	}
 
 	.hero {
+		position: relative;
 		min-height: calc(100vh - var(--header-height));
 		background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
 			linear-gradient(-45deg, var(--primary-color), #6688ff, #66ffdd);
@@ -114,9 +153,20 @@
 		}
 	}
 
-	.projects {
-		@include margin-horiz;
+	.about {
+		&__content {
+			font-size: 125%;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 300;
+			line-height: 1.5em;
+		}
 
+		p {
+			margin: 1.5em 0;
+		}
+	}
+
+	.projects {
 		&__items {
 			@include flex-center;
 			list-style-type: none;
@@ -133,6 +183,16 @@
 
 		.hero__down-arrow {
 			height: 6rem;
+		}
+
+		.about__content {
+			max-width: 800px;
+			margin: 0 auto;
+			text-indent: 4ch;
+			padding: 1em 2em;
+			background-color: #e9e9e9;
+			border: 1px solid var(--primary-color);
+			border-radius: 20px;
 		}
 	}
 
