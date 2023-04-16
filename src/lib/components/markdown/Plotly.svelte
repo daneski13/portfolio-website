@@ -17,26 +17,10 @@
 <!-- If javascript is enabled -->
 {#if js}
 	{#if caption == undefined}
-		<iframe
-			title={alt}
-			id="igraph"
-			scrolling="no"
-			style="border:none;"
-			{src}
-			{height}
-			width="100%"
-		/>
+		<iframe title={alt} id="igraph" scrolling="no" {src} {height} />
 	{:else}
 		<figure>
-			<iframe
-				title={alt}
-				id="igraph"
-				scrolling="no"
-				style="border:none;"
-				{src}
-				{height}
-				width="100%"
-			/>
+			<iframe title={alt} id="igraph" scrolling="no" {src} {height} />
 			<figcaption>{caption}</figcaption>
 		</figure>
 	{/if}
@@ -52,6 +36,11 @@
 		margin-left: auto;
 		margin-right: auto;
 		max-width: 100%;
+	}
+
+	iframe {
+		width: 100%;
+		border: none;
 	}
 
 	figcaption {

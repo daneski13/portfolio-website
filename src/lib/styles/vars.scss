@@ -2,25 +2,22 @@
 	--primary-color: hsl(196, 100%, 70%);
 	--primary-color-opacity: hsla(196, 100%, 70%, 0.5);
 	--background-color: #f9f9f9;
-	--margin-left-right: 7vw;
+	--margin-left-right: 8vw;
 	--header-height: 5.75rem;
 	min-width: 280px;
 	color: rgb(50, 50, 50);
 	font-family: sans-serif;
-
-	code {
-		background-color: lightgray;
-	}
 
 	svg {
 		max-width: 100%;
 	}
 
 	// Heading sizes
-	$heading-scale: 0.25; // amount headings grow from h6 to h1
-	@for $i from 1 through 6 {
+	$heading-scale: 0.4; // heading step size in em
+	$max-heading: 5; // max heading size (unlikely to use smaller than h4 or h5)
+	@for $i from 1 through $max-heading {
 		h#{$i} {
-			font-size: 1rem + $heading-scale * (6 - $i);
+			font-size: 1em + $heading-scale * ($max-heading - $i);
 		}
 	}
 }
@@ -29,14 +26,6 @@
 	:root {
 		--margin-left-right: 10vw;
 		--header-height: 6.75rem;
-
-		// Heading sizes
-		$heading-scale: 0.5;
-		@for $i from 1 through 6 {
-			h#{$i} {
-				font-size: 1rem + $heading-scale * (6 - $i);
-			}
-		}
 	}
 }
 

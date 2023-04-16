@@ -1,4 +1,5 @@
 <script lang="ts">
+	import 'prism-themes/themes/prism-ghcolors.min.css';
 	import type { ProjectData } from './data';
 
 	export let data: ProjectData;
@@ -33,14 +34,14 @@
 	@import 'src/lib/styles/mixins.scss';
 
 	.project {
-		font-size: 125%;
+		font-size: 112.5%;
 		@include margin-horiz;
-		margin-top: 7rem;
+		margin-top: 3em;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 
 		&__cover-img {
-			max-width: 100%;
+			max-width: min(100%, 500px);
 			border: 1px solid;
 			display: block;
 			margin: 0 auto;
@@ -49,6 +50,7 @@
 		&__title {
 			margin-bottom: 0.5rem;
 			font-weight: 500;
+			font-size: 3em;
 		}
 
 		&__meta {
@@ -90,7 +92,6 @@
 
 		@for $i from 2 through 6 {
 			:global(h#{$i}) {
-				font-size: 1rem + 0.2 * (6 - $i);
 				margin-bottom: 0.8em;
 
 				// offsets each heading so the header bar doesn't hide stuff
@@ -136,9 +137,10 @@
 
 	// Link svg to header id, like Github
 	:global(.autolink_image) {
-		margin-left: -1.4rem;
-		padding-right: 0.2rem;
-		width: 1.2rem;
+		margin-left: -0.6em;
+		// padding-right: 0.1em;
+		width: 0.6em;
+		height: 0.6em;
 		visibility: hidden;
 		color: black;
 	}
@@ -157,6 +159,7 @@
 
 	@media only screen and (min-width: 768px) {
 		.project {
+			font-size: 125%;
 			max-width: 700px;
 			margin-left: auto;
 			margin-right: auto;

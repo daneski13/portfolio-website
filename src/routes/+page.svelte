@@ -97,6 +97,10 @@
 		}
 	}
 
+	.subtitle {
+		font-size: 250%;
+	}
+
 	.hero {
 		position: relative;
 		min-height: calc(100vh - var(--header-height));
@@ -183,6 +187,10 @@
 
 		.hero__down-arrow {
 			height: 6rem;
+		}
+
+		.subtitle {
+			font-size: 325%;
 		}
 
 		.about__content {
