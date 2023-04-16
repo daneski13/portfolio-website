@@ -90,7 +90,7 @@
 			}
 		}
 
-		@for $i from 2 through 6 {
+		@for $i from 1 through 6 {
 			:global(h#{$i}) {
 				margin-bottom: 0.8em;
 
@@ -103,6 +103,15 @@
 			:global(h#{$i}:hover .autolink_image) {
 				visibility: visible;
 			}
+		}
+
+		// Horizontal line style
+		:global(hr) {
+			background-color: rgb(76, 76, 76);
+			border-width: 0;
+			border-radius: 1rem;
+			height: 2px;
+			margin-bottom: 2em;
 		}
 	}
 
@@ -124,15 +133,6 @@
 
 	:global(th, td) {
 		padding: 0.2em 0.5em;
-	}
-
-	// Horizontal line style
-	:global(hr) {
-		background-color: rgb(76, 76, 76);
-		border-width: 0;
-		border-radius: 1rem;
-		height: 2px;
-		margin-bottom: 2em;
 	}
 
 	// Link svg to header id, like Github

@@ -1,5 +1,5 @@
 <header class="header">
-	<a class="header__logo" href="/" rel="index">
+	<a class="header__logo" href="/" target="_self" rel="index">
 		<svg
 			version="1.1"
 			viewBox="0 0 55 20"
