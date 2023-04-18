@@ -115,9 +115,26 @@
 		}
 	}
 
-	// Table formatting
+	/* Table formatting */
 	:global(th, td) {
-		border: 1px solid;
+		border: 1px solid #bbb;
+		padding: 0.2em 0.5em;
+	}
+
+	// Table Headings
+	:global(thead) {
+		border: 1px solid #bbb;
+	}
+	:global(thead th) {
+		background-color: #b0b0b0;
+	}
+	:global(thead tr:nth-child(2) th) {
+		background-color: #c0c0c0;
+	}
+
+	// Every other row
+	:global(tr:nth-child(even)) {
+		background-color: #ddd;
 	}
 
 	:global(table) {
@@ -129,10 +146,6 @@
 		width: max-content;
 		max-width: 100%;
 		overflow: auto;
-	}
-
-	:global(th, td) {
-		padding: 0.2em 0.5em;
 	}
 
 	// Link svg to header id, like Github

@@ -6,6 +6,8 @@ import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import remarkAttr from 'remark-attr';
 import rehypeAddClasses from 'rehype-add-classes';
+import remarkMath from 'remark-math';
+import rehypeKatexSvelte from 'rehype-katex-svelte';
 import { s } from 'hastscript';
 
 /** @type {import('@sveltejs/kit').Config} */
@@ -25,8 +27,9 @@ const config = {
 
 		mdsvex({
 			extensions: ['.md'],
-			remarkPlugins: [remarkAttr],
+			remarkPlugins: [remarkAttr, remarkMath],
 			rehypePlugins: [
+				rehypeKatexSvelte,
 				rehypeSlug,
 				[
 					rehypeAutolinkHeadings,
