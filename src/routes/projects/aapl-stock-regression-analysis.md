@@ -1,7 +1,7 @@
 ---
 title: Apple Stock Regression Analysis
 date: '2023-04-14'
-# updated: ''
+updated: '2023-04-17'
 card: /projects/aapl-stock-regression-analysis/card.webp
 cover: /projects/aapl-stock-regression-analysis/Output_10_1.webp
 description: Regression Analysis of Apple Inc. (AAPL) stock returns from 2017 to 2022
@@ -9,6 +9,7 @@ code: https://github.com/Daneski13/AAPL-Stock-Regression-Analysis
 ---
 
 <script>
+    import Anchor from '$lib/components/markdown/Anchor.svelte';
     import Regression from '$lib/components/projects/aapl-stock-regression-analysis/Regression.svelte';
 
     const alt_text = ["Residual Plots", "Apple Security Characteristics Line"];
@@ -34,7 +35,7 @@ Seaborn, Matplotlib
 
 ---
 
-**Below is the Jupyter Notebook for this project:**
+**Below is the Jupyter Notebook for this project, generated with <Anchor href="https://daneski13.github.io/projects/jupyter2svelte">Jupyter2Svelte</Anchor>:**
 
 <section>
     <Regression img_path_prefix={path_prefix} img_alt_text={alt_text} />
