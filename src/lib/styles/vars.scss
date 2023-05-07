@@ -12,6 +12,19 @@
 		max-width: 100%;
 	}
 
+	// Kinda like github show a line after h2 headings
+	h2::after {
+		content: '';
+		display: block;
+		position: relative;
+		height: 1.5px;
+		border-radius: 1px;
+		width: 90%;
+		left: 5%;
+		background-color: #bdbdbd;
+		margin-top: 1rem;
+	}
+
 	// Heading sizes
 	$heading-scale: 0.4; // heading step size in em
 	$max-heading: 5; // max heading size (unlikely to use smaller than h4 or h5)

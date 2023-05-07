@@ -158,18 +158,6 @@
 		color: black;
 	}
 
-	// Like github show a line after h2 headings
-	:global(.h-2::after) {
-		@include pseudo;
-		position: relative;
-		margin-top: 0.3em;
-		margin-bottom: -0.1em;
-		height: 1px;
-		width: 100%;
-		border-radius: 1px;
-		background-color: #bdbdbd;
-	}
-
 	@media only screen and (min-width: 768px) {
 		.project {
 			font-size: 125%;

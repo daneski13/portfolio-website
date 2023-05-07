@@ -123,10 +123,10 @@
 
 	@media only screen and (min-width: 768px) {
 		.card {
-			max-width: 18em;
+			max-width: 18rem;
 
 			.card__title {
-				font-size: 1.5em;
+				font-size: 1.5rem;
 			}
 		}
 	}

@@ -16,7 +16,6 @@
 		background: var(--background-color);
 		width: 10px;
 		height: 7px;
-		// display: none;
 
 		&-thumb {
 			background: var(--primary-color);

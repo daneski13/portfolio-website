@@ -30,15 +30,15 @@
 					d="M20 2.5C20.3315 2.5 20.6495 2.6317 20.8839 2.86612C21.1183 3.10054 21.25 3.41848 21.25 3.75V33.2325L29.115 25.365C29.3497 25.1303 29.6681 24.9984 30 24.9984C30.3319 24.9984 30.6503 25.1303 30.885 25.365C31.1197 25.5997 31.2516 25.9181 31.2516 26.25C31.2516 26.5819 31.1197 26.9003 30.885 27.135L20.885 37.135C20.7689 37.2514 20.6309 37.3438 20.4791 37.4068C20.3272 37.4698 20.1644 37.5022 20 37.5022C19.8356 37.5022 19.6728 37.4698 19.5209 37.4068C19.369 37.3438 19.2311 37.2514 19.115 37.135L9.11499 27.135C8.88028 26.9003 8.74841 26.5819 8.74841 26.25C8.74841 25.9181 8.88028 25.5997 9.11499 25.365C9.34971 25.1303 9.66805 24.9984 9.99999 24.9984C10.3319 24.9984 10.6503 25.1303 10.885 25.365L18.75 33.2325V3.75C18.75 3.41848 18.8817 3.10054 19.1161 2.86612C19.3505 2.6317 19.6685 2.5 20 2.5V2.5Z"
 					fill="white"
 				/>
-			</svg></a
-		>
+			</svg>
+		</a>
 	</section>
 
-	<section class="about" id="about">
-		<div class="section__container">
-			<a href="/#about"><h2 class="subtitle">About</h2></a>
+	<div class="non-hero-container">
+		<section class="about" id="about">
+			<a href="/#about"><h2>About</h2></a>
 
-			<div class="about__content">
+			<div class="about__blurb">
 				<p>
 					I am an honors undergraduate student entering my Senior year at Washington State
 					University studying Finance and Management Information Systems (MIS).
@@ -47,8 +47,8 @@
 					I am passionate about exploring financial markets, economics, and cutting-edge
 					technologies. I also enjoy working with and learning about computers. Through coursework,
 					projects, and self-study, I have developed a solid foundation of knowledge and skills in
-					these areas. In particular, I am intrigued by the potential of data analysis and machine
-					learning to drive innovation in business contexts.
+					these areas. In particular, I am excited about leveraging data analysis and machine
+					learning to drive business decisions.
 				</p>
 				<p>
 					Looking ahead, I plan to continue expanding my knowledge and skills in data analysis,
@@ -61,12 +61,10 @@
 					playing golf, snowboarding, and staying active.
 				</p>
 			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="projects" id="projects">
-		<div class="section__container">
-			<a href="/#projects"><h2 class="subtitle">Projects</h2></a>
+		<section class="projects" id="projects">
+			<a href="/#projects"><h2>Projects</h2></a>
 
 			<div class="projects__items content">
 				{#each data.projects as project}
@@ -78,8 +76,8 @@
 					/>
 				{/each}
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 </main>
 
 <style lang="scss">
@@ -89,16 +87,9 @@
 		// offsets each section so the header bar doesn't hide stuff
 		padding-top: var(--header-height);
 		margin-top: calc(var(--header-height) * -1);
+		font-size: 125%;
 		width: 100%;
 		height: 100%;
-
-		.section__container {
-			@include margin-horiz;
-		}
-	}
-
-	.subtitle {
-		font-size: 250%;
 	}
 
 	.hero {
@@ -157,16 +148,19 @@
 		}
 	}
 
+	.non-hero-container {
+		@include margin-horiz;
+	}
+
 	.about {
-		&__content {
-			font-size: 125%;
+		&__blurb {
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 300;
 			line-height: 1.5em;
 		}
 
 		p {
-			margin: 1.5em 0;
+			margin: 1.5rem 0;
 		}
 	}
 
@@ -189,11 +183,7 @@
 			height: 6rem;
 		}
 
-		.subtitle {
-			font-size: 325%;
-		}
-
-		.about__content {
+		.about__blurb {
 			max-width: 800px;
 			margin: 0 auto;
 			text-indent: 4ch;
