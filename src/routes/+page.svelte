@@ -40,8 +40,8 @@
 
 			<div class="about__content">
 				<p>
-					I am an honors undergraduate student in my Junior year at Washington State University
-					studying Finance and Management Information Systems (MIS).
+					I am an honors undergraduate student entering my Senior year at Washington State
+					University studying Finance and Management Information Systems (MIS).
 				</p>
 				<p>
 					I am passionate about exploring financial markets, economics, and cutting-edge
@@ -53,8 +53,8 @@
 				<p>
 					Looking ahead, I plan to continue expanding my knowledge and skills in data analysis,
 					machine learning, and computer science, with a focus on their applications in finance.
-					Ultimately, I hope to contribute to the success of a financial services firm or technology
-					company by applying my skills and knowledge.
+					Ultimately, I strive to contribute to the success of a financial services firm or
+					technology company by applying my strong work ethic and analytical mindset.
 				</p>
 				<p>
 					Outside of academics and career aspirations, I enjoy watching movies and television shows,
