@@ -1,7 +1,7 @@
 ---
 title: Apple Stock Regression Analysis
 date: '2023-04-14'
-updated: '2023-04-17'
+updated: '2023-05-07'
 card: /projects/aapl-stock-regression-analysis/card.webp
 cover: /projects/aapl-stock-regression-analysis/Output_10_1.webp
 description: Regression Analysis of Apple Inc. (AAPL) stock returns from 2017 to 2022
@@ -32,6 +32,10 @@ Pandas
 **Data Visualization Libraries:**
 
 Seaborn, Matplotlib
+
+**Modeling Library:**
+
+Statsmodels
 
 ---
 
