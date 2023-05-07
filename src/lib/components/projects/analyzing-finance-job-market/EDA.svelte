@@ -1,19 +1,446 @@
 <script>
-// Path prefix for the images
+	// Path prefix for the images
 	export let img_path_prefix;
-    // Array of alt text for the images
-    export let img_alt_text = Array.apply(null, Array(3)).map(function () {
-        return 'Image';
-    });
+	// Array of alt text for the images
+	export let img_alt_text = Array.apply(null, Array(3)).map(function () {
+		return 'Image';
+	});
 
-// Render Plotly plots, called when the Plotly script is loaded
+	// Render Plotly plots, called when the Plotly script is loaded
 	const renderPlotly = () => {
 		/* Plotly Plots */
-        Plotly.newPlot('plotly_21_0', [{"autocolorscale":false,"colorscale":[[0,"rgb(247,251,255)"],[0.125,"rgb(222,235,247)"],[0.25,"rgb(198,219,239)"],[0.375,"rgb(158,202,225)"],[0.5,"rgb(107,174,214)"],[0.625,"rgb(66,146,198)"],[0.75,"rgb(33,113,181)"],[0.875,"rgb(8,81,156)"],[1,"rgb(8,48,107)"]],"locationmode":"USA-states","locations":["AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VA","VT","WA","WI","WV","WY","ad","an","do","ea","ee","es","ex","ia","is","nd","ng","on","ro","to"],"marker":{"line":{"color":"black"}},"type":"choropleth","z":[40,155,101,546,2947,538,355,359,124,1469,806,53,195,65,1500,274,232,124,124,972,558,56,535,549,382,72,41,791,31,111,85,693,60,148,2116,781,155,305,891,69,181,46,358,2074,249,886,39,719,407,52,20,2,2,8,726,5,1515,54,13,20,5,2,32,18,1]}], {"geo":{"scope":"usa"},"template":{"data":{"bar":[{"error_x":{"color":"#2a3f5f"},"error_y":{"color":"#2a3f5f"},"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"bar"}],"barpolar":[{"marker":{"line":{"color":"#E5ECF6","width":0.5},"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"barpolar"}],"carpet":[{"aaxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"baxis":{"endlinecolor":"#2a3f5f","gridcolor":"white","linecolor":"white","minorgridcolor":"white","startlinecolor":"#2a3f5f"},"type":"carpet"}],"choropleth":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"choropleth"}],"contour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"type":"contour"}],"contourcarpet":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"contourcarpet"}],"heatmap":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"type":"heatmap"}],"heatmapgl":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"type":"heatmapgl"}],"histogram":[{"marker":{"pattern":{"fillmode":"overlay","size":10,"solidity":0.2}},"type":"histogram"}],"histogram2d":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"type":"histogram2d"}],"histogram2dcontour":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"type":"histogram2dcontour"}],"mesh3d":[{"colorbar":{"outlinewidth":0,"ticks":""},"type":"mesh3d"}],"parcoords":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"parcoords"}],"pie":[{"automargin":true,"type":"pie"}],"scatter":[{"fillpattern":{"fillmode":"overlay","size":10,"solidity":0.2},"type":"scatter"}],"scatter3d":[{"line":{"colorbar":{"outlinewidth":0,"ticks":""}},"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatter3d"}],"scattercarpet":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattercarpet"}],"scattergeo":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergeo"}],"scattergl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattergl"}],"scattermapbox":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scattermapbox"}],"scatterpolar":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolar"}],"scatterpolargl":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterpolargl"}],"scatterternary":[{"marker":{"colorbar":{"outlinewidth":0,"ticks":""}},"type":"scatterternary"}],"surface":[{"colorbar":{"outlinewidth":0,"ticks":""},"colorscale":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"type":"surface"}],"table":[{"cells":{"fill":{"color":"#EBF0F8"},"line":{"color":"white"}},"header":{"fill":{"color":"#C8D4E3"},"line":{"color":"white"}},"type":"table"}]},"layout":{"annotationdefaults":{"arrowcolor":"#2a3f5f","arrowhead":0,"arrowwidth":1},"autotypenumbers":"strict","coloraxis":{"colorbar":{"outlinewidth":0,"ticks":""}},"colorscale":{"diverging":[[0,"#8e0152"],[0.1,"#c51b7d"],[0.2,"#de77ae"],[0.3,"#f1b6da"],[0.4,"#fde0ef"],[0.5,"#f7f7f7"],[0.6,"#e6f5d0"],[0.7,"#b8e186"],[0.8,"#7fbc41"],[0.9,"#4d9221"],[1,"#276419"]],"sequential":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]],"sequentialminus":[[0,"#0d0887"],[0.1111111111111111,"#46039f"],[0.2222222222222222,"#7201a8"],[0.3333333333333333,"#9c179e"],[0.4444444444444444,"#bd3786"],[0.5555555555555556,"#d8576b"],[0.6666666666666666,"#ed7953"],[0.7777777777777778,"#fb9f3a"],[0.8888888888888888,"#fdca26"],[1,"#f0f921"]]},"colorway":["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],"font":{"color":"#2a3f5f"},"geo":{"bgcolor":"white","lakecolor":"white","landcolor":"#E5ECF6","showlakes":true,"showland":true,"subunitcolor":"white"},"hoverlabel":{"align":"left"},"hovermode":"closest","mapbox":{"style":"light"},"paper_bgcolor":"white","plot_bgcolor":"#E5ECF6","polar":{"angularaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","radialaxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"scene":{"xaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"yaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"},"zaxis":{"backgroundcolor":"#E5ECF6","gridcolor":"white","gridwidth":2,"linecolor":"white","showbackground":true,"ticks":"","zerolinecolor":"white"}},"shapedefaults":{"line":{"color":"#2a3f5f"}},"ternary":{"aaxis":{"gridcolor":"white","linecolor":"white","ticks":""},"baxis":{"gridcolor":"white","linecolor":"white","ticks":""},"bgcolor":"#E5ECF6","caxis":{"gridcolor":"white","linecolor":"white","ticks":""}},"title":{"x":0.05},"xaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2},"yaxis":{"automargin":true,"gridcolor":"white","linecolor":"white","ticks":"","title":{"standoff":15},"zerolinecolor":"white","zerolinewidth":2}}},"title":{"text":"Job Listings by State"}});
-
+		Plotly.newPlot(
+			'plotly_21_0',
+			[
+				{
+					autocolorscale: false,
+					colorscale: [
+						[0, 'rgb(247,251,255)'],
+						[0.125, 'rgb(222,235,247)'],
+						[0.25, 'rgb(198,219,239)'],
+						[0.375, 'rgb(158,202,225)'],
+						[0.5, 'rgb(107,174,214)'],
+						[0.625, 'rgb(66,146,198)'],
+						[0.75, 'rgb(33,113,181)'],
+						[0.875, 'rgb(8,81,156)'],
+						[1, 'rgb(8,48,107)']
+					],
+					locationmode: 'USA-states',
+					locations: [
+						'AK',
+						'AL',
+						'AR',
+						'AZ',
+						'CA',
+						'CO',
+						'CT',
+						'DC',
+						'DE',
+						'FL',
+						'GA',
+						'HI',
+						'IA',
+						'ID',
+						'IL',
+						'IN',
+						'KS',
+						'KY',
+						'LA',
+						'MA',
+						'MD',
+						'ME',
+						'MI',
+						'MN',
+						'MO',
+						'MS',
+						'MT',
+						'NC',
+						'ND',
+						'NE',
+						'NH',
+						'NJ',
+						'NM',
+						'NV',
+						'NY',
+						'OH',
+						'OK',
+						'OR',
+						'PA',
+						'RI',
+						'SC',
+						'SD',
+						'TN',
+						'TX',
+						'UT',
+						'VA',
+						'VT',
+						'WA',
+						'WI',
+						'WV',
+						'WY',
+						'ad',
+						'an',
+						'do',
+						'ea',
+						'ee',
+						'es',
+						'ex',
+						'ia',
+						'is',
+						'nd',
+						'ng',
+						'on',
+						'ro',
+						'to'
+					],
+					marker: { line: { color: 'black' } },
+					type: 'choropleth',
+					z: [
+						40, 155, 101, 546, 2947, 538, 355, 359, 124, 1469, 806, 53, 195, 65, 1500, 274, 232,
+						124, 124, 972, 558, 56, 535, 549, 382, 72, 41, 791, 31, 111, 85, 693, 60, 148, 2116,
+						781, 155, 305, 891, 69, 181, 46, 358, 2074, 249, 886, 39, 719, 407, 52, 20, 2, 2, 8,
+						726, 5, 1515, 54, 13, 20, 5, 2, 32, 18, 1
+					]
+				}
+			],
+			{
+				geo: { scope: 'usa' },
+				template: {
+					data: {
+						bar: [
+							{
+								error_x: { color: '#2a3f5f' },
+								error_y: { color: '#2a3f5f' },
+								marker: {
+									line: { color: '#E5ECF6', width: 0.5 },
+									pattern: { fillmode: 'overlay', size: 10, solidity: 0.2 }
+								},
+								type: 'bar'
+							}
+						],
+						barpolar: [
+							{
+								marker: {
+									line: { color: '#E5ECF6', width: 0.5 },
+									pattern: { fillmode: 'overlay', size: 10, solidity: 0.2 }
+								},
+								type: 'barpolar'
+							}
+						],
+						carpet: [
+							{
+								aaxis: {
+									endlinecolor: '#2a3f5f',
+									gridcolor: 'white',
+									linecolor: 'white',
+									minorgridcolor: 'white',
+									startlinecolor: '#2a3f5f'
+								},
+								baxis: {
+									endlinecolor: '#2a3f5f',
+									gridcolor: 'white',
+									linecolor: 'white',
+									minorgridcolor: 'white',
+									startlinecolor: '#2a3f5f'
+								},
+								type: 'carpet'
+							}
+						],
+						choropleth: [{ colorbar: { outlinewidth: 0, ticks: '' }, type: 'choropleth' }],
+						contour: [
+							{
+								colorbar: { outlinewidth: 0, ticks: '' },
+								colorscale: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								type: 'contour'
+							}
+						],
+						contourcarpet: [{ colorbar: { outlinewidth: 0, ticks: '' }, type: 'contourcarpet' }],
+						heatmap: [
+							{
+								colorbar: { outlinewidth: 0, ticks: '' },
+								colorscale: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								type: 'heatmap'
+							}
+						],
+						heatmapgl: [
+							{
+								colorbar: { outlinewidth: 0, ticks: '' },
+								colorscale: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								type: 'heatmapgl'
+							}
+						],
+						histogram: [
+							{
+								marker: { pattern: { fillmode: 'overlay', size: 10, solidity: 0.2 } },
+								type: 'histogram'
+							}
+						],
+						histogram2d: [
+							{
+								colorbar: { outlinewidth: 0, ticks: '' },
+								colorscale: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								type: 'histogram2d'
+							}
+						],
+						histogram2dcontour: [
+							{
+								colorbar: { outlinewidth: 0, ticks: '' },
+								colorscale: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								type: 'histogram2dcontour'
+							}
+						],
+						mesh3d: [{ colorbar: { outlinewidth: 0, ticks: '' }, type: 'mesh3d' }],
+						parcoords: [{ line: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'parcoords' }],
+						pie: [{ automargin: true, type: 'pie' }],
+						scatter: [
+							{ fillpattern: { fillmode: 'overlay', size: 10, solidity: 0.2 }, type: 'scatter' }
+						],
+						scatter3d: [
+							{
+								line: { colorbar: { outlinewidth: 0, ticks: '' } },
+								marker: { colorbar: { outlinewidth: 0, ticks: '' } },
+								type: 'scatter3d'
+							}
+						],
+						scattercarpet: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattercarpet' }
+						],
+						scattergeo: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattergeo' }
+						],
+						scattergl: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattergl' }
+						],
+						scattermapbox: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattermapbox' }
+						],
+						scatterpolar: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scatterpolar' }
+						],
+						scatterpolargl: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scatterpolargl' }
+						],
+						scatterternary: [
+							{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scatterternary' }
+						],
+						surface: [
+							{
+								colorbar: { outlinewidth: 0, ticks: '' },
+								colorscale: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								type: 'surface'
+							}
+						],
+						table: [
+							{
+								cells: { fill: { color: '#EBF0F8' }, line: { color: 'white' } },
+								header: { fill: { color: '#C8D4E3' }, line: { color: 'white' } },
+								type: 'table'
+							}
+						]
+					},
+					layout: {
+						annotationdefaults: { arrowcolor: '#2a3f5f', arrowhead: 0, arrowwidth: 1 },
+						autotypenumbers: 'strict',
+						coloraxis: { colorbar: { outlinewidth: 0, ticks: '' } },
+						colorscale: {
+							diverging: [
+								[0, '#8e0152'],
+								[0.1, '#c51b7d'],
+								[0.2, '#de77ae'],
+								[0.3, '#f1b6da'],
+								[0.4, '#fde0ef'],
+								[0.5, '#f7f7f7'],
+								[0.6, '#e6f5d0'],
+								[0.7, '#b8e186'],
+								[0.8, '#7fbc41'],
+								[0.9, '#4d9221'],
+								[1, '#276419']
+							],
+							sequential: [
+								[0, '#0d0887'],
+								[0.1111111111111111, '#46039f'],
+								[0.2222222222222222, '#7201a8'],
+								[0.3333333333333333, '#9c179e'],
+								[0.4444444444444444, '#bd3786'],
+								[0.5555555555555556, '#d8576b'],
+								[0.6666666666666666, '#ed7953'],
+								[0.7777777777777778, '#fb9f3a'],
+								[0.8888888888888888, '#fdca26'],
+								[1, '#f0f921']
+							],
+							sequentialminus: [
+								[0, '#0d0887'],
+								[0.1111111111111111, '#46039f'],
+								[0.2222222222222222, '#7201a8'],
+								[0.3333333333333333, '#9c179e'],
+								[0.4444444444444444, '#bd3786'],
+								[0.5555555555555556, '#d8576b'],
+								[0.6666666666666666, '#ed7953'],
+								[0.7777777777777778, '#fb9f3a'],
+								[0.8888888888888888, '#fdca26'],
+								[1, '#f0f921']
+							]
+						},
+						colorway: [
+							'#636efa',
+							'#EF553B',
+							'#00cc96',
+							'#ab63fa',
+							'#FFA15A',
+							'#19d3f3',
+							'#FF6692',
+							'#B6E880',
+							'#FF97FF',
+							'#FECB52'
+						],
+						font: { color: '#2a3f5f' },
+						geo: {
+							bgcolor: 'white',
+							lakecolor: 'white',
+							landcolor: '#E5ECF6',
+							showlakes: true,
+							showland: true,
+							subunitcolor: 'white'
+						},
+						hoverlabel: { align: 'left' },
+						hovermode: 'closest',
+						mapbox: { style: 'light' },
+						paper_bgcolor: 'white',
+						plot_bgcolor: '#E5ECF6',
+						polar: {
+							angularaxis: { gridcolor: 'white', linecolor: 'white', ticks: '' },
+							bgcolor: '#E5ECF6',
+							radialaxis: { gridcolor: 'white', linecolor: 'white', ticks: '' }
+						},
+						scene: {
+							xaxis: {
+								backgroundcolor: '#E5ECF6',
+								gridcolor: 'white',
+								gridwidth: 2,
+								linecolor: 'white',
+								showbackground: true,
+								ticks: '',
+								zerolinecolor: 'white'
+							},
+							yaxis: {
+								backgroundcolor: '#E5ECF6',
+								gridcolor: 'white',
+								gridwidth: 2,
+								linecolor: 'white',
+								showbackground: true,
+								ticks: '',
+								zerolinecolor: 'white'
+							},
+							zaxis: {
+								backgroundcolor: '#E5ECF6',
+								gridcolor: 'white',
+								gridwidth: 2,
+								linecolor: 'white',
+								showbackground: true,
+								ticks: '',
+								zerolinecolor: 'white'
+							}
+						},
+						shapedefaults: { line: { color: '#2a3f5f' } },
+						ternary: {
+							aaxis: { gridcolor: 'white', linecolor: 'white', ticks: '' },
+							baxis: { gridcolor: 'white', linecolor: 'white', ticks: '' },
+							bgcolor: '#E5ECF6',
+							caxis: { gridcolor: 'white', linecolor: 'white', ticks: '' }
+						},
+						title: { x: 0.05 },
+						xaxis: {
+							automargin: true,
+							gridcolor: 'white',
+							linecolor: 'white',
+							ticks: '',
+							title: { standoff: 15 },
+							zerolinecolor: 'white',
+							zerolinewidth: 2
+						},
+						yaxis: {
+							automargin: true,
+							gridcolor: 'white',
+							linecolor: 'white',
+							ticks: '',
+							title: { standoff: 15 },
+							zerolinecolor: 'white',
+							zerolinewidth: 2
+						}
+					}
+				},
+				title: { text: 'Job Listings by State' }
+			}
+		);
 	};
 
-    const raw = `<div class="input input-md"><span class="heading"><h1 id="finance-job-market-analysis">Finance Job Market Analysis<a href="#finance-job-market-analysis"> ¶</a></h1></span>
+	const raw = `<div class="input input-md"><span class="heading"><h1 id="finance-job-market-analysis">Finance Job Market Analysis<a href="#finance-job-market-analysis"> ¶</a></h1></span>
 <span class="heading"><h2 id="purpose">Purpose<a href="#purpose"> ¶</a></h2></span>
 <p>As a finance and management information systems major I wanted to learn more about the current (2022) job market before entering within the next couple years.</p>
 <span class="heading"><h3 id="questions">Questions<a href="#questions"> ¶</a></h3></span>
@@ -708,12 +1135,17 @@ figure {
 	}
 }
 
-</style>`;</script>
+</style>`;
+</script>
 
 <svelte:head>
-    <script src="https://cdn.plot.ly/plotly-2.20.0.min.js" charset="utf-8" on:load={renderPlotly}></script>
+	<script
+		src="https://cdn.plot.ly/plotly-2.20.0.min.js"
+		charset="utf-8"
+		on:load={renderPlotly}
+	></script>
 </svelte:head>
 
 <div class="jupyter">
-    {@html raw}
+	{@html raw}
 </div>

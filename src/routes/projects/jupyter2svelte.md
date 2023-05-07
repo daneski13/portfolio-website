@@ -29,4 +29,4 @@ These shortcomings include:
 - Markdown output doesn't work well with <Anchor href="https://mdsvex.com/">MDsveX</Anchor>
 - <Anchor href="https://plotly.com/python/">Plotly</Anchor> support
 - Custom CSS styling
-- <Anchor href="https://prismjs.com">PirsmJS</Anchor> syntax highlighting
+- <Anchor href="https://prismjs.com">PrismJS</Anchor> syntax highlighting

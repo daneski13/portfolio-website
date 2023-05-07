@@ -15,10 +15,17 @@
 	::-webkit-scrollbar {
 		background: var(--background-color);
 		width: 10px;
-	}
+		height: 7px;
+		// display: none;
 
-	::-webkit-scrollbar-thumb {
-		background: var(--primary-color);
+		&-thumb {
+			background: var(--primary-color);
+			border-radius: 5px;
+		}
+
+		&-track {
+			background: var(--background-color);
+		}
 	}
 
 	body {
