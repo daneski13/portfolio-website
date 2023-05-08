@@ -39,7 +39,6 @@ jobs:
         with:
           folder: build # The folder the action should deploy.
           token: ${{ secrets.DEPLOY_SECRET }}
-          repository-name: Daneski13/Daneski13.github.io # repo to deploy to
           target-folder: docs # folder to deploy to
           branch: main # branch on repo
           commit-message: Update
