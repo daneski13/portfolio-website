@@ -156,7 +156,7 @@
 		&__blurb {
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 300;
-			line-height: 1.5em;
+			line-height: 1.75em;
 		}
 
 		p {
@@ -167,9 +167,8 @@
 	.projects {
 		&__items {
 			@include flex-center;
-			list-style-type: none;
 			flex-wrap: wrap;
-			gap: 1.5rem;
+			gap: 25px;
 			padding: 0;
 		}
 	}
@@ -188,7 +187,6 @@
 			margin: 0 auto;
 			text-indent: 4ch;
 			padding: 1em 2em;
-			background-color: #e9e9e9;
 			border: 1px solid var(--primary-color);
 			border-radius: 20px;
 		}
