@@ -47,18 +47,16 @@
 					I am passionate about exploring financial markets, economics, and cutting-edge
 					technologies. I also enjoy working with and learning about computers. Through coursework,
 					projects, and self-study, I have developed a solid foundation of knowledge and skills in
-					these areas. In particular, I am excited about leveraging data analysis and machine
-					learning to drive business decisions.
+					these areas.
 				</p>
 				<p>
 					Looking ahead, I plan to continue expanding my knowledge and skills in data analysis,
 					machine learning, and computer science, with a focus on their applications in finance.
-					Ultimately, I strive to contribute to the success of a financial services firm or
-					technology company by applying my strong work ethic and analytical mindset.
 				</p>
 				<p>
-					Outside of academics and career aspirations, I enjoy watching movies and television shows,
-					playing golf, snowboarding, and staying active.
+					Outside of academic and career aspirations, I enjoy movies and television shows, traveling
+					to explore new cultures and places, playing golf, snowboarding, and staying active to keep
+					my mind and body energized.
 				</p>
 			</div>
 		</section>

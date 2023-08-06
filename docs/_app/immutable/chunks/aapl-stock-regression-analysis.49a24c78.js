@@ -1,4 +1,73 @@
-import{S as Es,i as Ns,s as Fs,k as p,a as d,M as zs,l as o,m as u,h as a,c as h,L as S,n as f,E as e,b as c,O as Bs,F as ms,q as v,y as Ts,r as w,z as Is,A as js,g as Ds,d as Gs,B as Ms}from"./index.45ab08d9.js";import{A as qs}from"./Anchor.9f55ae68.js";function Hs(y){let n,i,m,r,l,b;return{c(){n=p("script"),m=d(),r=p("div"),this.h()},l(k){const _=zs("svelte-zr0you",document.head);n=o(_,"SCRIPT",{src:!0,charset:!0});var x=u(n);x.forEach(a),_.forEach(a),m=h(k),r=o(k,"DIV",{class:!0});var V=u(r);V.forEach(a),this.h()},h(){S(n.src,i="https://cdn.plot.ly/plotly-2.20.0.min.js")||f(n,"src",i),f(n,"charset","utf-8"),f(r,"class","jupyter")},m(k,_){e(document.head,n),c(k,m,_),c(k,r,_),r.innerHTML=y[1],l||(b=Bs(n,"load",y[0]),l=!0)},p:ms,i:ms,o:ms,d(k){a(n),k&&a(m),k&&a(r),l=!1,b()}}}function Vs(y,n,i){let{img_path_prefix:m}=n,{img_alt_text:r=Array.apply(null,Array(2)).map(function(){return"Image"})}=n;const l=()=>{},b=`<div class="input input-md"><span class="heading"><h1 id="apple-regression-analysis">Apple Regression Analysis<a href="#apple-regression-analysis"> ¶</a></h1></span>
+import {
+	S as Es,
+	i as Ns,
+	s as Fs,
+	k as p,
+	a as d,
+	M as zs,
+	l as o,
+	m as u,
+	h as a,
+	c as h,
+	L as S,
+	n as f,
+	E as e,
+	b as c,
+	O as Bs,
+	F as ms,
+	q as v,
+	y as Ts,
+	r as w,
+	z as Is,
+	A as js,
+	g as Ds,
+	d as Gs,
+	B as Ms
+} from './index.45ab08d9.js';
+import { A as qs } from './Anchor.9f55ae68.js';
+function Hs(y) {
+	let n, i, m, r, l, b;
+	return {
+		c() {
+			(n = p('script')), (m = d()), (r = p('div')), this.h();
+		},
+		l(k) {
+			const _ = zs('svelte-zr0you', document.head);
+			n = o(_, 'SCRIPT', { src: !0, charset: !0 });
+			var x = u(n);
+			x.forEach(a), _.forEach(a), (m = h(k)), (r = o(k, 'DIV', { class: !0 }));
+			var V = u(r);
+			V.forEach(a), this.h();
+		},
+		h() {
+			S(n.src, (i = 'https://cdn.plot.ly/plotly-2.20.0.min.js')) || f(n, 'src', i),
+				f(n, 'charset', 'utf-8'),
+				f(r, 'class', 'jupyter');
+		},
+		m(k, _) {
+			e(document.head, n),
+				c(k, m, _),
+				c(k, r, _),
+				(r.innerHTML = y[1]),
+				l || ((b = Bs(n, 'load', y[0])), (l = !0));
+		},
+		p: ms,
+		i: ms,
+		o: ms,
+		d(k) {
+			a(n), k && a(m), k && a(r), (l = !1), b();
+		}
+	};
+}
+function Vs(y, n, i) {
+	let { img_path_prefix: m } = n,
+		{
+			img_alt_text: r = Array.apply(null, Array(2)).map(function () {
+				return 'Image';
+			})
+		} = n;
+	const l = () => {},
+		b = `<div class="input input-md"><span class="heading"><h1 id="apple-regression-analysis">Apple Regression Analysis<a href="#apple-regression-analysis"> ¶</a></h1></span>
 <p><strong>This analysis was completed as part of my Intermediate Financial Management (FIN 425) course project at Washington State University.</strong></p>
 <span class="heading"><h2 id="purpose">Purpose<a href="#purpose"> ¶</a></h2></span>
 <p>This notebook aims to analyze the systematic risks associated with a new smartphone manufacturing and launch project that a firm is considering. Given the significant investment required for this project, the firm desires a more in-depth understanding of the systematic risk and is seeking recommendations to make an informed decision.</p>
@@ -478,4 +547,366 @@ th {
 td {
   text-align: right;
   border: 0;
-}</style>`;return y.$$set=k=>{"img_path_prefix"in k&&i(2,m=k.img_path_prefix),"img_alt_text"in k&&i(3,r=k.img_alt_text)},[l,b,m,r]}class $s extends Es{constructor(n){super(),Ns(this,n,Vs,Hs,Fs,{img_path_prefix:2,img_alt_text:3})}}function Ws(y){let n;return{c(){n=v("Jupyter2Svelte")},l(i){n=w(i,"Jupyter2Svelte")},m(i,m){c(i,n,m)},d(i){i&&a(n)}}}function Xs(y){let n,i,m,r,l,b,k,_,x,V,ts,P,fs,es,L,gs,ps,O,ys,os,T,bs,$,I,z,cs,W,j,ls,X,D,B,is,Y,G,rs,J,M,q,us,U,E,ks,K,Q,Z,N,R,ds,A,hs,ss,F,C,as;return A=new qs({props:{href:"https://daneski13.github.io/projects/jupyter2svelte",$$slots:{default:[Ws]},$$scope:{ctx:y}}}),C=new $s({props:{img_path_prefix:Ys,img_alt_text:y[0]}}),{c(){n=p("p"),i=p("strong"),m=v("Technologies:"),r=d(),l=p("p"),b=p("img"),_=d(),x=p("img"),ts=d(),P=p("img"),es=d(),L=p("img"),ps=d(),O=p("img"),os=d(),T=p("img"),$=d(),I=p("p"),z=p("strong"),cs=v("Data Manipulation Library:"),W=d(),j=p("p"),ls=v("Pandas"),X=d(),D=p("p"),B=p("strong"),is=v("Data Visualization Libraries:"),Y=d(),G=p("p"),rs=v("Seaborn, Matplotlib"),J=d(),M=p("p"),q=p("strong"),us=v("Modeling Library:"),U=d(),E=p("p"),ks=v("Statsmodels"),K=d(),Q=p("hr"),Z=d(),N=p("p"),R=p("strong"),ds=v("Below is the Jupyter Notebook for this project, generated with "),Ts(A.$$.fragment),hs=v(":"),ss=d(),F=p("section"),Ts(C.$$.fragment),this.h()},l(s){n=o(s,"P",{});var t=u(n);i=o(t,"STRONG",{});var H=u(i);m=w(H,"Technologies:"),H.forEach(a),t.forEach(a),r=h(s),l=o(s,"P",{});var g=u(l);b=o(g,"IMG",{src:!0,alt:!0}),_=h(g),x=o(g,"IMG",{src:!0,alt:!0}),ts=h(g),P=o(g,"IMG",{src:!0,alt:!0}),es=h(g),L=o(g,"IMG",{src:!0,alt:!0}),ps=h(g),O=o(g,"IMG",{src:!0,alt:!0}),os=h(g),T=o(g,"IMG",{src:!0,alt:!0}),g.forEach(a),$=h(s),I=o(s,"P",{});var vs=u(I);z=o(vs,"STRONG",{});var ws=u(z);cs=w(ws,"Data Manipulation Library:"),ws.forEach(a),vs.forEach(a),W=h(s),j=o(s,"P",{});var _s=u(j);ls=w(_s,"Pandas"),_s.forEach(a),X=h(s),D=o(s,"P",{});var xs=u(D);B=o(xs,"STRONG",{});var As=u(B);is=w(As,"Data Visualization Libraries:"),As.forEach(a),xs.forEach(a),Y=h(s),G=o(s,"P",{});var Rs=u(G);rs=w(Rs,"Seaborn, Matplotlib"),Rs.forEach(a),J=h(s),M=o(s,"P",{});var Cs=u(M);q=o(Cs,"STRONG",{});var Ss=u(q);us=w(Ss,"Modeling Library:"),Ss.forEach(a),Cs.forEach(a),U=h(s),E=o(s,"P",{});var Ps=u(E);ks=w(Ps,"Statsmodels"),Ps.forEach(a),K=h(s),Q=o(s,"HR",{}),Z=h(s),N=o(s,"P",{});var Ls=u(N);R=o(Ls,"STRONG",{});var ns=u(R);ds=w(ns,"Below is the Jupyter Notebook for this project, generated with "),Is(A.$$.fragment,ns),hs=w(ns,":"),ns.forEach(a),Ls.forEach(a),ss=h(s),F=o(s,"SECTION",{});var Os=u(F);Is(C.$$.fragment,Os),Os.forEach(a),this.h()},h(){S(b.src,k="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54")||f(b,"src",k),f(b,"alt","Python"),S(x.src,V="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white")||f(x,"src",V),f(x,"alt","Jupyter Lab/Notebook"),S(P.src,fs="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white")||f(P,"src",fs),f(P,"alt","Anaconda"),S(L.src,gs="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white")||f(L,"src",gs),f(L,"alt","GitHub"),S(O.src,ys="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white")||f(O,"src",ys),f(O,"alt","Git"),S(T.src,bs="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white")||f(T,"src",bs),f(T,"alt","Visual Studio Code")},m(s,t){c(s,n,t),e(n,i),e(i,m),c(s,r,t),c(s,l,t),e(l,b),e(l,_),e(l,x),e(l,ts),e(l,P),e(l,es),e(l,L),e(l,ps),e(l,O),e(l,os),e(l,T),c(s,$,t),c(s,I,t),e(I,z),e(z,cs),c(s,W,t),c(s,j,t),e(j,ls),c(s,X,t),c(s,D,t),e(D,B),e(B,is),c(s,Y,t),c(s,G,t),e(G,rs),c(s,J,t),c(s,M,t),e(M,q),e(q,us),c(s,U,t),c(s,E,t),e(E,ks),c(s,K,t),c(s,Q,t),c(s,Z,t),c(s,N,t),e(N,R),e(R,ds),js(A,R,null),e(R,hs),c(s,ss,t),c(s,F,t),js(C,F,null),as=!0},p(s,[t]){const H={};t&2&&(H.$$scope={dirty:t,ctx:s}),A.$set(H)},i(s){as||(Ds(A.$$.fragment,s),Ds(C.$$.fragment,s),as=!0)},o(s){Gs(A.$$.fragment,s),Gs(C.$$.fragment,s),as=!1},d(s){s&&a(n),s&&a(r),s&&a(l),s&&a($),s&&a(I),s&&a(W),s&&a(j),s&&a(X),s&&a(D),s&&a(Y),s&&a(G),s&&a(J),s&&a(M),s&&a(U),s&&a(E),s&&a(K),s&&a(Q),s&&a(Z),s&&a(N),Ms(A),s&&a(ss),s&&a(F),Ms(C)}}}const Qs={title:"Apple Stock Regression Analysis",date:"2023-04-14",updated:"2023-05-07",card:"/projects/aapl-stock-regression-analysis/card.webp",cover:"/projects/aapl-stock-regression-analysis/Output_10_1.webp",description:"Regression Analysis of Apple Inc. (AAPL) stock returns from 2017 to 2022",code:"https://github.com/Daneski13/AAPL-Stock-Regression-Analysis"},Ys="/projects/aapl-stock-regression-analysis/";function Js(y){return[["Residual Plots","Apple Security Characteristics Line"]]}class Zs extends Es{constructor(n){super(),Ns(this,n,Js,Xs,Fs,{})}}export{Zs as default,Qs as metadata};
+}</style>`;
+	return (
+		(y.$$set = (k) => {
+			'img_path_prefix' in k && i(2, (m = k.img_path_prefix)),
+				'img_alt_text' in k && i(3, (r = k.img_alt_text));
+		}),
+		[l, b, m, r]
+	);
+}
+class $s extends Es {
+	constructor(n) {
+		super(), Ns(this, n, Vs, Hs, Fs, { img_path_prefix: 2, img_alt_text: 3 });
+	}
+}
+function Ws(y) {
+	let n;
+	return {
+		c() {
+			n = v('Jupyter2Svelte');
+		},
+		l(i) {
+			n = w(i, 'Jupyter2Svelte');
+		},
+		m(i, m) {
+			c(i, n, m);
+		},
+		d(i) {
+			i && a(n);
+		}
+	};
+}
+function Xs(y) {
+	let n,
+		i,
+		m,
+		r,
+		l,
+		b,
+		k,
+		_,
+		x,
+		V,
+		ts,
+		P,
+		fs,
+		es,
+		L,
+		gs,
+		ps,
+		O,
+		ys,
+		os,
+		T,
+		bs,
+		$,
+		I,
+		z,
+		cs,
+		W,
+		j,
+		ls,
+		X,
+		D,
+		B,
+		is,
+		Y,
+		G,
+		rs,
+		J,
+		M,
+		q,
+		us,
+		U,
+		E,
+		ks,
+		K,
+		Q,
+		Z,
+		N,
+		R,
+		ds,
+		A,
+		hs,
+		ss,
+		F,
+		C,
+		as;
+	return (
+		(A = new qs({
+			props: {
+				href: 'https://daneski13.github.io/projects/jupyter2svelte',
+				$$slots: { default: [Ws] },
+				$$scope: { ctx: y }
+			}
+		})),
+		(C = new $s({ props: { img_path_prefix: Ys, img_alt_text: y[0] } })),
+		{
+			c() {
+				(n = p('p')),
+					(i = p('strong')),
+					(m = v('Technologies:')),
+					(r = d()),
+					(l = p('p')),
+					(b = p('img')),
+					(_ = d()),
+					(x = p('img')),
+					(ts = d()),
+					(P = p('img')),
+					(es = d()),
+					(L = p('img')),
+					(ps = d()),
+					(O = p('img')),
+					(os = d()),
+					(T = p('img')),
+					($ = d()),
+					(I = p('p')),
+					(z = p('strong')),
+					(cs = v('Data Manipulation Library:')),
+					(W = d()),
+					(j = p('p')),
+					(ls = v('Pandas')),
+					(X = d()),
+					(D = p('p')),
+					(B = p('strong')),
+					(is = v('Data Visualization Libraries:')),
+					(Y = d()),
+					(G = p('p')),
+					(rs = v('Seaborn, Matplotlib')),
+					(J = d()),
+					(M = p('p')),
+					(q = p('strong')),
+					(us = v('Modeling Library:')),
+					(U = d()),
+					(E = p('p')),
+					(ks = v('Statsmodels')),
+					(K = d()),
+					(Q = p('hr')),
+					(Z = d()),
+					(N = p('p')),
+					(R = p('strong')),
+					(ds = v('Below is the Jupyter Notebook for this project, generated with ')),
+					Ts(A.$$.fragment),
+					(hs = v(':')),
+					(ss = d()),
+					(F = p('section')),
+					Ts(C.$$.fragment),
+					this.h();
+			},
+			l(s) {
+				n = o(s, 'P', {});
+				var t = u(n);
+				i = o(t, 'STRONG', {});
+				var H = u(i);
+				(m = w(H, 'Technologies:')), H.forEach(a), t.forEach(a), (r = h(s)), (l = o(s, 'P', {}));
+				var g = u(l);
+				(b = o(g, 'IMG', { src: !0, alt: !0 })),
+					(_ = h(g)),
+					(x = o(g, 'IMG', { src: !0, alt: !0 })),
+					(ts = h(g)),
+					(P = o(g, 'IMG', { src: !0, alt: !0 })),
+					(es = h(g)),
+					(L = o(g, 'IMG', { src: !0, alt: !0 })),
+					(ps = h(g)),
+					(O = o(g, 'IMG', { src: !0, alt: !0 })),
+					(os = h(g)),
+					(T = o(g, 'IMG', { src: !0, alt: !0 })),
+					g.forEach(a),
+					($ = h(s)),
+					(I = o(s, 'P', {}));
+				var vs = u(I);
+				z = o(vs, 'STRONG', {});
+				var ws = u(z);
+				(cs = w(ws, 'Data Manipulation Library:')),
+					ws.forEach(a),
+					vs.forEach(a),
+					(W = h(s)),
+					(j = o(s, 'P', {}));
+				var _s = u(j);
+				(ls = w(_s, 'Pandas')), _s.forEach(a), (X = h(s)), (D = o(s, 'P', {}));
+				var xs = u(D);
+				B = o(xs, 'STRONG', {});
+				var As = u(B);
+				(is = w(As, 'Data Visualization Libraries:')),
+					As.forEach(a),
+					xs.forEach(a),
+					(Y = h(s)),
+					(G = o(s, 'P', {}));
+				var Rs = u(G);
+				(rs = w(Rs, 'Seaborn, Matplotlib')), Rs.forEach(a), (J = h(s)), (M = o(s, 'P', {}));
+				var Cs = u(M);
+				q = o(Cs, 'STRONG', {});
+				var Ss = u(q);
+				(us = w(Ss, 'Modeling Library:')),
+					Ss.forEach(a),
+					Cs.forEach(a),
+					(U = h(s)),
+					(E = o(s, 'P', {}));
+				var Ps = u(E);
+				(ks = w(Ps, 'Statsmodels')),
+					Ps.forEach(a),
+					(K = h(s)),
+					(Q = o(s, 'HR', {})),
+					(Z = h(s)),
+					(N = o(s, 'P', {}));
+				var Ls = u(N);
+				R = o(Ls, 'STRONG', {});
+				var ns = u(R);
+				(ds = w(ns, 'Below is the Jupyter Notebook for this project, generated with ')),
+					Is(A.$$.fragment, ns),
+					(hs = w(ns, ':')),
+					ns.forEach(a),
+					Ls.forEach(a),
+					(ss = h(s)),
+					(F = o(s, 'SECTION', {}));
+				var Os = u(F);
+				Is(C.$$.fragment, Os), Os.forEach(a), this.h();
+			},
+			h() {
+				S(
+					b.src,
+					(k =
+						'https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54')
+				) || f(b, 'src', k),
+					f(b, 'alt', 'Python'),
+					S(
+						x.src,
+						(V =
+							'https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white')
+					) || f(x, 'src', V),
+					f(x, 'alt', 'Jupyter Lab/Notebook'),
+					S(
+						P.src,
+						(fs =
+							'https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white')
+					) || f(P, 'src', fs),
+					f(P, 'alt', 'Anaconda'),
+					S(
+						L.src,
+						(gs =
+							'https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white')
+					) || f(L, 'src', gs),
+					f(L, 'alt', 'GitHub'),
+					S(
+						O.src,
+						(ys =
+							'https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white')
+					) || f(O, 'src', ys),
+					f(O, 'alt', 'Git'),
+					S(
+						T.src,
+						(bs =
+							'https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white')
+					) || f(T, 'src', bs),
+					f(T, 'alt', 'Visual Studio Code');
+			},
+			m(s, t) {
+				c(s, n, t),
+					e(n, i),
+					e(i, m),
+					c(s, r, t),
+					c(s, l, t),
+					e(l, b),
+					e(l, _),
+					e(l, x),
+					e(l, ts),
+					e(l, P),
+					e(l, es),
+					e(l, L),
+					e(l, ps),
+					e(l, O),
+					e(l, os),
+					e(l, T),
+					c(s, $, t),
+					c(s, I, t),
+					e(I, z),
+					e(z, cs),
+					c(s, W, t),
+					c(s, j, t),
+					e(j, ls),
+					c(s, X, t),
+					c(s, D, t),
+					e(D, B),
+					e(B, is),
+					c(s, Y, t),
+					c(s, G, t),
+					e(G, rs),
+					c(s, J, t),
+					c(s, M, t),
+					e(M, q),
+					e(q, us),
+					c(s, U, t),
+					c(s, E, t),
+					e(E, ks),
+					c(s, K, t),
+					c(s, Q, t),
+					c(s, Z, t),
+					c(s, N, t),
+					e(N, R),
+					e(R, ds),
+					js(A, R, null),
+					e(R, hs),
+					c(s, ss, t),
+					c(s, F, t),
+					js(C, F, null),
+					(as = !0);
+			},
+			p(s, [t]) {
+				const H = {};
+				t & 2 && (H.$$scope = { dirty: t, ctx: s }), A.$set(H);
+			},
+			i(s) {
+				as || (Ds(A.$$.fragment, s), Ds(C.$$.fragment, s), (as = !0));
+			},
+			o(s) {
+				Gs(A.$$.fragment, s), Gs(C.$$.fragment, s), (as = !1);
+			},
+			d(s) {
+				s && a(n),
+					s && a(r),
+					s && a(l),
+					s && a($),
+					s && a(I),
+					s && a(W),
+					s && a(j),
+					s && a(X),
+					s && a(D),
+					s && a(Y),
+					s && a(G),
+					s && a(J),
+					s && a(M),
+					s && a(U),
+					s && a(E),
+					s && a(K),
+					s && a(Q),
+					s && a(Z),
+					s && a(N),
+					Ms(A),
+					s && a(ss),
+					s && a(F),
+					Ms(C);
+			}
+		}
+	);
+}
+const Qs = {
+		title: 'Apple Stock Regression Analysis',
+		date: '2023-04-14',
+		updated: '2023-05-07',
+		card: '/projects/aapl-stock-regression-analysis/card.webp',
+		cover: '/projects/aapl-stock-regression-analysis/Output_10_1.webp',
+		description: 'Regression Analysis of Apple Inc. (AAPL) stock returns from 2017 to 2022',
+		code: 'https://github.com/Daneski13/AAPL-Stock-Regression-Analysis'
+	},
+	Ys = '/projects/aapl-stock-regression-analysis/';
+function Js(y) {
+	return [['Residual Plots', 'Apple Security Characteristics Line']];
+}
+class Zs extends Es {
+	constructor(n) {
+		super(), Ns(this, n, Js, Xs, Fs, {});
+	}
+}
+export { Zs as default, Qs as metadata };
