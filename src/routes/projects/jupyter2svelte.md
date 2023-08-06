@@ -22,9 +22,15 @@ code: https://www.npmjs.com/package/jupyter2svelte
 
 ---
 
-Jupyter2Svelte is a simple CLI tool for converting Jupyter Notebook files into Svelte components written in TypeScript. The tool was born out of a desire to have a simple way to convert Jupyter Notebooks into Svelte components for use in this website and addresses some of the shortcomings of Jupyter's built-in <Anchor href="https://github.com/jupyter/nbconvert">nbconvert</Anchor> tool.
+Jupyter2Svelte is a simple CLI tool for converting Jupyter Notebook files into
+Svelte components written in TypeScript.
 
-These shortcomings include:
+The tool was born out of a desire to have a simple way to convert Jupyter
+Notebooks into Svelte components for use in this website and addresses some of
+the shortcomings of Jupyter's built-in
+<Anchor href="https://github.com/jupyter/nbconvert">nbconvert</Anchor> tool.
+
+The shortcomings of Jupyter's build-in solution include:
 
 - Markdown output doesn't work well with <Anchor href="https://mdsvex.com/">MDsveX</Anchor>
 - <Anchor href="https://plotly.com/python/">Plotly</Anchor> support

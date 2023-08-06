@@ -1,52 +1,104 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap");.header.svelte-pfksif{display:flex;justify-content:space-between;background-color:rgba(255, 255, 255, 0.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);position:sticky;top:0;z-index:999;box-shadow:0px 5px 10px 0px rgba(0, 0, 0, 0.3)}.header__logo.svelte-pfksif{margin:1.5rem 0;margin-left:var(--margin-left-right);margin-right:auto}.header__socials.svelte-pfksif{display:flex;gap:1.5rem;margin:1.5rem 0;margin-right:var(--margin-left-right)}.header__socials__link.svelte-pfksif{fill:var(--primary-color);stroke:black;stroke-width:0.2px}.header__socials__link.svelte-pfksif:hover{transform:scale(1.1)}svg.svelte-pfksif{height:2.5rem}@media only screen and (min-width: 768px){svg.svelte-pfksif{height:3.5rem}}.footer.svelte-1ny2ba7{background-color:var(--background-color);padding:0.2rem 0;border-top:1.5px solid #555;margin-top:5rem;margin-left:var(--margin-left-right);margin-right:var(--margin-left-right)}.footer__copyright.svelte-1ny2ba7{color:#555;font-weight:300;text-align:center}:root {
-  --primary-color: hsl(196, 100%, 70%);
-  --primary-color-opacity: hsla(196, 100%, 70%, 0.5);
-  --background-color: #f9f9f9;
-  --margin-left-right: 8vw;
-  --header-height: 5.75rem;
-  min-width: 280px;
-  color: rgb(50, 50, 50);
-  font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,600;1,300;1,600&display=swap');
+.header.svelte-pfksif {
+	display: flex;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.9);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	position: sticky;
+	top: 0;
+	z-index: 999;
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.header__logo.svelte-pfksif {
+	margin: 1.5rem 0;
+	margin-left: var(--margin-left-right);
+	margin-right: auto;
+}
+.header__socials.svelte-pfksif {
+	display: flex;
+	gap: 1.5rem;
+	margin: 1.5rem 0;
+	margin-right: var(--margin-left-right);
+}
+.header__socials__link.svelte-pfksif {
+	fill: var(--primary-color);
+	stroke: black;
+	stroke-width: 0.2px;
+}
+.header__socials__link.svelte-pfksif:hover {
+	transform: scale(1.1);
+}
+svg.svelte-pfksif {
+	height: 2.5rem;
+}
+@media only screen and (min-width: 768px) {
+	svg.svelte-pfksif {
+		height: 3.5rem;
+	}
+}
+.footer.svelte-1ny2ba7 {
+	background-color: var(--background-color);
+	padding: 0.2rem 0;
+	border-top: 1.5px solid #555;
+	margin-top: 5rem;
+	margin-left: var(--margin-left-right);
+	margin-right: var(--margin-left-right);
+}
+.footer__copyright.svelte-1ny2ba7 {
+	color: #555;
+	font-weight: 300;
+	text-align: center;
+}
+:root {
+	--primary-color: hsl(196, 100%, 70%);
+	--primary-color-opacity: hsla(196, 100%, 70%, 0.5);
+	--background-color: #f9f9f9;
+	--margin-left-right: 8vw;
+	--header-height: 5.75rem;
+	min-width: 280px;
+	color: rgb(50, 50, 50);
+	font-family: sans-serif;
 }
 :root svg {
-  max-width: 100%;
+	max-width: 100%;
 }
 :root h2::after {
-  content: "";
-  display: block;
-  position: relative;
-  height: 1.5px;
-  border-radius: 1px;
-  width: 90%;
-  left: 5%;
-  background-color: #bdbdbd;
-  margin-top: 1rem;
+	content: '';
+	display: block;
+	position: relative;
+	height: 1.5px;
+	border-radius: 1px;
+	width: 90%;
+	left: 5%;
+	background-color: #bdbdbd;
+	margin-top: 1rem;
 }
 :root h1 {
-  font-size: 2.6em;
+	font-size: 2.6em;
 }
 :root h2 {
-  font-size: 2.2em;
+	font-size: 2.2em;
 }
 :root h3 {
-  font-size: 1.8em;
+	font-size: 1.8em;
 }
 :root h4 {
-  font-size: 1.4em;
+	font-size: 1.4em;
 }
 :root h5 {
-  font-size: 1em;
+	font-size: 1em;
 }
 
 @media only screen and (min-width: 768px) {
-  :root {
-    --margin-left-right: 10vw;
-    --header-height: 6.75rem;
-  }
+	:root {
+		--margin-left-right: 10vw;
+		--header-height: 6.75rem;
+	}
 }
 @media only screen and (min-width: 1705px) {
-  :root {
-    /* 
+	:root {
+		/* 
     Want a max width of 1770px with a margin of 10% viewport,like previous 
     media query. Beyond 1770px, I want the content width to be consistent without 
     messing up backgrounds, so the margin needs to dynamically expand with the viewport.
@@ -79,11 +131,26 @@
     	calc((100vw - 1416px) / 2)
     	calc(50vw - 708px)
     */
-    --margin-left-right: calc(50vw - 682px);
-  }
+		--margin-left-right: calc(50vw - 682px);
+	}
 }
-::-webkit-scrollbar{background:var(--background-color);width:10px;height:7px}
-::-webkit-scrollbar-thumb{background:var(--primary-color);border-radius:5px}
-::-webkit-scrollbar-track{background:var(--background-color)}
-body{margin:0;background-color:var(--background-color)}
-a{text-decoration:none;color:black}
+::-webkit-scrollbar {
+	background: var(--background-color);
+	width: 10px;
+	height: 7px;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+	border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+	background: var(--background-color);
+}
+body {
+	margin: 0;
+	background-color: var(--background-color);
+}
+a {
+	text-decoration: none;
+	color: black;
+}

@@ -1,4 +1,505 @@
-import{S as As,i as Cs,s as Ss,k as p,a as h,M as Fs,l,m,h as t,c as g,L as S,n as k,E as e,b as c,O as Is,F as ls,q as x,y as ys,r as j,z as ws,A as vs,g as _s,d as xs,B as js}from"./index.45ab08d9.js";import{A as Es}from"./Anchor.9f55ae68.js";function Ls(b){let a,r,u,i,o,y;return{c(){a=p("script"),u=h(),i=p("div"),this.h()},l(d){const w=Fs("svelte-zr0you",document.head);a=l(w,"SCRIPT",{src:!0,charset:!0});var v=m(a);v.forEach(t),w.forEach(t),u=g(d),i=l(d,"DIV",{class:!0});var q=m(i);q.forEach(t),this.h()},h(){S(a.src,r="https://cdn.plot.ly/plotly-2.20.0.min.js")||k(a,"src",r),k(a,"charset","utf-8"),k(i,"class","jupyter")},m(d,w){e(document.head,a),c(d,u,w),c(d,i,w),i.innerHTML=b[1],o||(y=Is(a,"load",b[0]),o=!0)},p:ls,i:ls,o:ls,d(d){t(a),d&&t(u),d&&t(i),o=!1,y()}}}function Ts(b,a,r){let{img_path_prefix:u}=a,{img_alt_text:i=Array.apply(null,Array(3)).map(function(){return"Image"})}=a;const o=()=>{Plotly.newPlot("plotly_21_0",[{autocolorscale:!1,colorscale:[[0,"rgb(247,251,255)"],[.125,"rgb(222,235,247)"],[.25,"rgb(198,219,239)"],[.375,"rgb(158,202,225)"],[.5,"rgb(107,174,214)"],[.625,"rgb(66,146,198)"],[.75,"rgb(33,113,181)"],[.875,"rgb(8,81,156)"],[1,"rgb(8,48,107)"]],locationmode:"USA-states",locations:["AK","AL","AR","AZ","CA","CO","CT","DC","DE","FL","GA","HI","IA","ID","IL","IN","KS","KY","LA","MA","MD","ME","MI","MN","MO","MS","MT","NC","ND","NE","NH","NJ","NM","NV","NY","OH","OK","OR","PA","RI","SC","SD","TN","TX","UT","VA","VT","WA","WI","WV","WY","ad","an","do","ea","ee","es","ex","ia","is","nd","ng","on","ro","to"],marker:{line:{color:"black"}},type:"choropleth",z:[40,155,101,546,2947,538,355,359,124,1469,806,53,195,65,1500,274,232,124,124,972,558,56,535,549,382,72,41,791,31,111,85,693,60,148,2116,781,155,305,891,69,181,46,358,2074,249,886,39,719,407,52,20,2,2,8,726,5,1515,54,13,20,5,2,32,18,1]}],{geo:{scope:"usa"},template:{data:{bar:[{error_x:{color:"#2a3f5f"},error_y:{color:"#2a3f5f"},marker:{line:{color:"#E5ECF6",width:.5},pattern:{fillmode:"overlay",size:10,solidity:.2}},type:"bar"}],barpolar:[{marker:{line:{color:"#E5ECF6",width:.5},pattern:{fillmode:"overlay",size:10,solidity:.2}},type:"barpolar"}],carpet:[{aaxis:{endlinecolor:"#2a3f5f",gridcolor:"white",linecolor:"white",minorgridcolor:"white",startlinecolor:"#2a3f5f"},baxis:{endlinecolor:"#2a3f5f",gridcolor:"white",linecolor:"white",minorgridcolor:"white",startlinecolor:"#2a3f5f"},type:"carpet"}],choropleth:[{colorbar:{outlinewidth:0,ticks:""},type:"choropleth"}],contour:[{colorbar:{outlinewidth:0,ticks:""},colorscale:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],type:"contour"}],contourcarpet:[{colorbar:{outlinewidth:0,ticks:""},type:"contourcarpet"}],heatmap:[{colorbar:{outlinewidth:0,ticks:""},colorscale:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],type:"heatmap"}],heatmapgl:[{colorbar:{outlinewidth:0,ticks:""},colorscale:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],type:"heatmapgl"}],histogram:[{marker:{pattern:{fillmode:"overlay",size:10,solidity:.2}},type:"histogram"}],histogram2d:[{colorbar:{outlinewidth:0,ticks:""},colorscale:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],type:"histogram2d"}],histogram2dcontour:[{colorbar:{outlinewidth:0,ticks:""},colorscale:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],type:"histogram2dcontour"}],mesh3d:[{colorbar:{outlinewidth:0,ticks:""},type:"mesh3d"}],parcoords:[{line:{colorbar:{outlinewidth:0,ticks:""}},type:"parcoords"}],pie:[{automargin:!0,type:"pie"}],scatter:[{fillpattern:{fillmode:"overlay",size:10,solidity:.2},type:"scatter"}],scatter3d:[{line:{colorbar:{outlinewidth:0,ticks:""}},marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scatter3d"}],scattercarpet:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scattercarpet"}],scattergeo:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scattergeo"}],scattergl:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scattergl"}],scattermapbox:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scattermapbox"}],scatterpolar:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scatterpolar"}],scatterpolargl:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scatterpolargl"}],scatterternary:[{marker:{colorbar:{outlinewidth:0,ticks:""}},type:"scatterternary"}],surface:[{colorbar:{outlinewidth:0,ticks:""},colorscale:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],type:"surface"}],table:[{cells:{fill:{color:"#EBF0F8"},line:{color:"white"}},header:{fill:{color:"#C8D4E3"},line:{color:"white"}},type:"table"}]},layout:{annotationdefaults:{arrowcolor:"#2a3f5f",arrowhead:0,arrowwidth:1},autotypenumbers:"strict",coloraxis:{colorbar:{outlinewidth:0,ticks:""}},colorscale:{diverging:[[0,"#8e0152"],[.1,"#c51b7d"],[.2,"#de77ae"],[.3,"#f1b6da"],[.4,"#fde0ef"],[.5,"#f7f7f7"],[.6,"#e6f5d0"],[.7,"#b8e186"],[.8,"#7fbc41"],[.9,"#4d9221"],[1,"#276419"]],sequential:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]],sequentialminus:[[0,"#0d0887"],[.1111111111111111,"#46039f"],[.2222222222222222,"#7201a8"],[.3333333333333333,"#9c179e"],[.4444444444444444,"#bd3786"],[.5555555555555556,"#d8576b"],[.6666666666666666,"#ed7953"],[.7777777777777778,"#fb9f3a"],[.8888888888888888,"#fdca26"],[1,"#f0f921"]]},colorway:["#636efa","#EF553B","#00cc96","#ab63fa","#FFA15A","#19d3f3","#FF6692","#B6E880","#FF97FF","#FECB52"],font:{color:"#2a3f5f"},geo:{bgcolor:"white",lakecolor:"white",landcolor:"#E5ECF6",showlakes:!0,showland:!0,subunitcolor:"white"},hoverlabel:{align:"left"},hovermode:"closest",mapbox:{style:"light"},paper_bgcolor:"white",plot_bgcolor:"#E5ECF6",polar:{angularaxis:{gridcolor:"white",linecolor:"white",ticks:""},bgcolor:"#E5ECF6",radialaxis:{gridcolor:"white",linecolor:"white",ticks:""}},scene:{xaxis:{backgroundcolor:"#E5ECF6",gridcolor:"white",gridwidth:2,linecolor:"white",showbackground:!0,ticks:"",zerolinecolor:"white"},yaxis:{backgroundcolor:"#E5ECF6",gridcolor:"white",gridwidth:2,linecolor:"white",showbackground:!0,ticks:"",zerolinecolor:"white"},zaxis:{backgroundcolor:"#E5ECF6",gridcolor:"white",gridwidth:2,linecolor:"white",showbackground:!0,ticks:"",zerolinecolor:"white"}},shapedefaults:{line:{color:"#2a3f5f"}},ternary:{aaxis:{gridcolor:"white",linecolor:"white",ticks:""},baxis:{gridcolor:"white",linecolor:"white",ticks:""},bgcolor:"#E5ECF6",caxis:{gridcolor:"white",linecolor:"white",ticks:""}},title:{x:.05},xaxis:{automargin:!0,gridcolor:"white",linecolor:"white",ticks:"",title:{standoff:15},zerolinecolor:"white",zerolinewidth:2},yaxis:{automargin:!0,gridcolor:"white",linecolor:"white",ticks:"",title:{standoff:15},zerolinecolor:"white",zerolinewidth:2}}},title:{text:"Job Listings by State"}})},y=`<div class="input input-md"><span class="heading"><h1 id="finance-job-market-analysis">Finance Job Market Analysis<a href="#finance-job-market-analysis"> ¶</a></h1></span>
+import {
+	S as As,
+	i as Cs,
+	s as Ss,
+	k as p,
+	a as h,
+	M as Fs,
+	l,
+	m,
+	h as t,
+	c as g,
+	L as S,
+	n as k,
+	E as e,
+	b as c,
+	O as Is,
+	F as ls,
+	q as x,
+	y as ys,
+	r as j,
+	z as ws,
+	A as vs,
+	g as _s,
+	d as xs,
+	B as js
+} from './index.45ab08d9.js';
+import { A as Es } from './Anchor.9f55ae68.js';
+function Ls(b) {
+	let a, r, u, i, o, y;
+	return {
+		c() {
+			(a = p('script')), (u = h()), (i = p('div')), this.h();
+		},
+		l(d) {
+			const w = Fs('svelte-zr0you', document.head);
+			a = l(w, 'SCRIPT', { src: !0, charset: !0 });
+			var v = m(a);
+			v.forEach(t), w.forEach(t), (u = g(d)), (i = l(d, 'DIV', { class: !0 }));
+			var q = m(i);
+			q.forEach(t), this.h();
+		},
+		h() {
+			S(a.src, (r = 'https://cdn.plot.ly/plotly-2.20.0.min.js')) || k(a, 'src', r),
+				k(a, 'charset', 'utf-8'),
+				k(i, 'class', 'jupyter');
+		},
+		m(d, w) {
+			e(document.head, a),
+				c(d, u, w),
+				c(d, i, w),
+				(i.innerHTML = b[1]),
+				o || ((y = Is(a, 'load', b[0])), (o = !0));
+		},
+		p: ls,
+		i: ls,
+		o: ls,
+		d(d) {
+			t(a), d && t(u), d && t(i), (o = !1), y();
+		}
+	};
+}
+function Ts(b, a, r) {
+	let { img_path_prefix: u } = a,
+		{
+			img_alt_text: i = Array.apply(null, Array(3)).map(function () {
+				return 'Image';
+			})
+		} = a;
+	const o = () => {
+			Plotly.newPlot(
+				'plotly_21_0',
+				[
+					{
+						autocolorscale: !1,
+						colorscale: [
+							[0, 'rgb(247,251,255)'],
+							[0.125, 'rgb(222,235,247)'],
+							[0.25, 'rgb(198,219,239)'],
+							[0.375, 'rgb(158,202,225)'],
+							[0.5, 'rgb(107,174,214)'],
+							[0.625, 'rgb(66,146,198)'],
+							[0.75, 'rgb(33,113,181)'],
+							[0.875, 'rgb(8,81,156)'],
+							[1, 'rgb(8,48,107)']
+						],
+						locationmode: 'USA-states',
+						locations: [
+							'AK',
+							'AL',
+							'AR',
+							'AZ',
+							'CA',
+							'CO',
+							'CT',
+							'DC',
+							'DE',
+							'FL',
+							'GA',
+							'HI',
+							'IA',
+							'ID',
+							'IL',
+							'IN',
+							'KS',
+							'KY',
+							'LA',
+							'MA',
+							'MD',
+							'ME',
+							'MI',
+							'MN',
+							'MO',
+							'MS',
+							'MT',
+							'NC',
+							'ND',
+							'NE',
+							'NH',
+							'NJ',
+							'NM',
+							'NV',
+							'NY',
+							'OH',
+							'OK',
+							'OR',
+							'PA',
+							'RI',
+							'SC',
+							'SD',
+							'TN',
+							'TX',
+							'UT',
+							'VA',
+							'VT',
+							'WA',
+							'WI',
+							'WV',
+							'WY',
+							'ad',
+							'an',
+							'do',
+							'ea',
+							'ee',
+							'es',
+							'ex',
+							'ia',
+							'is',
+							'nd',
+							'ng',
+							'on',
+							'ro',
+							'to'
+						],
+						marker: { line: { color: 'black' } },
+						type: 'choropleth',
+						z: [
+							40, 155, 101, 546, 2947, 538, 355, 359, 124, 1469, 806, 53, 195, 65, 1500, 274, 232,
+							124, 124, 972, 558, 56, 535, 549, 382, 72, 41, 791, 31, 111, 85, 693, 60, 148, 2116,
+							781, 155, 305, 891, 69, 181, 46, 358, 2074, 249, 886, 39, 719, 407, 52, 20, 2, 2, 8,
+							726, 5, 1515, 54, 13, 20, 5, 2, 32, 18, 1
+						]
+					}
+				],
+				{
+					geo: { scope: 'usa' },
+					template: {
+						data: {
+							bar: [
+								{
+									error_x: { color: '#2a3f5f' },
+									error_y: { color: '#2a3f5f' },
+									marker: {
+										line: { color: '#E5ECF6', width: 0.5 },
+										pattern: { fillmode: 'overlay', size: 10, solidity: 0.2 }
+									},
+									type: 'bar'
+								}
+							],
+							barpolar: [
+								{
+									marker: {
+										line: { color: '#E5ECF6', width: 0.5 },
+										pattern: { fillmode: 'overlay', size: 10, solidity: 0.2 }
+									},
+									type: 'barpolar'
+								}
+							],
+							carpet: [
+								{
+									aaxis: {
+										endlinecolor: '#2a3f5f',
+										gridcolor: 'white',
+										linecolor: 'white',
+										minorgridcolor: 'white',
+										startlinecolor: '#2a3f5f'
+									},
+									baxis: {
+										endlinecolor: '#2a3f5f',
+										gridcolor: 'white',
+										linecolor: 'white',
+										minorgridcolor: 'white',
+										startlinecolor: '#2a3f5f'
+									},
+									type: 'carpet'
+								}
+							],
+							choropleth: [{ colorbar: { outlinewidth: 0, ticks: '' }, type: 'choropleth' }],
+							contour: [
+								{
+									colorbar: { outlinewidth: 0, ticks: '' },
+									colorscale: [
+										[0, '#0d0887'],
+										[0.1111111111111111, '#46039f'],
+										[0.2222222222222222, '#7201a8'],
+										[0.3333333333333333, '#9c179e'],
+										[0.4444444444444444, '#bd3786'],
+										[0.5555555555555556, '#d8576b'],
+										[0.6666666666666666, '#ed7953'],
+										[0.7777777777777778, '#fb9f3a'],
+										[0.8888888888888888, '#fdca26'],
+										[1, '#f0f921']
+									],
+									type: 'contour'
+								}
+							],
+							contourcarpet: [{ colorbar: { outlinewidth: 0, ticks: '' }, type: 'contourcarpet' }],
+							heatmap: [
+								{
+									colorbar: { outlinewidth: 0, ticks: '' },
+									colorscale: [
+										[0, '#0d0887'],
+										[0.1111111111111111, '#46039f'],
+										[0.2222222222222222, '#7201a8'],
+										[0.3333333333333333, '#9c179e'],
+										[0.4444444444444444, '#bd3786'],
+										[0.5555555555555556, '#d8576b'],
+										[0.6666666666666666, '#ed7953'],
+										[0.7777777777777778, '#fb9f3a'],
+										[0.8888888888888888, '#fdca26'],
+										[1, '#f0f921']
+									],
+									type: 'heatmap'
+								}
+							],
+							heatmapgl: [
+								{
+									colorbar: { outlinewidth: 0, ticks: '' },
+									colorscale: [
+										[0, '#0d0887'],
+										[0.1111111111111111, '#46039f'],
+										[0.2222222222222222, '#7201a8'],
+										[0.3333333333333333, '#9c179e'],
+										[0.4444444444444444, '#bd3786'],
+										[0.5555555555555556, '#d8576b'],
+										[0.6666666666666666, '#ed7953'],
+										[0.7777777777777778, '#fb9f3a'],
+										[0.8888888888888888, '#fdca26'],
+										[1, '#f0f921']
+									],
+									type: 'heatmapgl'
+								}
+							],
+							histogram: [
+								{
+									marker: { pattern: { fillmode: 'overlay', size: 10, solidity: 0.2 } },
+									type: 'histogram'
+								}
+							],
+							histogram2d: [
+								{
+									colorbar: { outlinewidth: 0, ticks: '' },
+									colorscale: [
+										[0, '#0d0887'],
+										[0.1111111111111111, '#46039f'],
+										[0.2222222222222222, '#7201a8'],
+										[0.3333333333333333, '#9c179e'],
+										[0.4444444444444444, '#bd3786'],
+										[0.5555555555555556, '#d8576b'],
+										[0.6666666666666666, '#ed7953'],
+										[0.7777777777777778, '#fb9f3a'],
+										[0.8888888888888888, '#fdca26'],
+										[1, '#f0f921']
+									],
+									type: 'histogram2d'
+								}
+							],
+							histogram2dcontour: [
+								{
+									colorbar: { outlinewidth: 0, ticks: '' },
+									colorscale: [
+										[0, '#0d0887'],
+										[0.1111111111111111, '#46039f'],
+										[0.2222222222222222, '#7201a8'],
+										[0.3333333333333333, '#9c179e'],
+										[0.4444444444444444, '#bd3786'],
+										[0.5555555555555556, '#d8576b'],
+										[0.6666666666666666, '#ed7953'],
+										[0.7777777777777778, '#fb9f3a'],
+										[0.8888888888888888, '#fdca26'],
+										[1, '#f0f921']
+									],
+									type: 'histogram2dcontour'
+								}
+							],
+							mesh3d: [{ colorbar: { outlinewidth: 0, ticks: '' }, type: 'mesh3d' }],
+							parcoords: [
+								{ line: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'parcoords' }
+							],
+							pie: [{ automargin: !0, type: 'pie' }],
+							scatter: [
+								{ fillpattern: { fillmode: 'overlay', size: 10, solidity: 0.2 }, type: 'scatter' }
+							],
+							scatter3d: [
+								{
+									line: { colorbar: { outlinewidth: 0, ticks: '' } },
+									marker: { colorbar: { outlinewidth: 0, ticks: '' } },
+									type: 'scatter3d'
+								}
+							],
+							scattercarpet: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattercarpet' }
+							],
+							scattergeo: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattergeo' }
+							],
+							scattergl: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattergl' }
+							],
+							scattermapbox: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scattermapbox' }
+							],
+							scatterpolar: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scatterpolar' }
+							],
+							scatterpolargl: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scatterpolargl' }
+							],
+							scatterternary: [
+								{ marker: { colorbar: { outlinewidth: 0, ticks: '' } }, type: 'scatterternary' }
+							],
+							surface: [
+								{
+									colorbar: { outlinewidth: 0, ticks: '' },
+									colorscale: [
+										[0, '#0d0887'],
+										[0.1111111111111111, '#46039f'],
+										[0.2222222222222222, '#7201a8'],
+										[0.3333333333333333, '#9c179e'],
+										[0.4444444444444444, '#bd3786'],
+										[0.5555555555555556, '#d8576b'],
+										[0.6666666666666666, '#ed7953'],
+										[0.7777777777777778, '#fb9f3a'],
+										[0.8888888888888888, '#fdca26'],
+										[1, '#f0f921']
+									],
+									type: 'surface'
+								}
+							],
+							table: [
+								{
+									cells: { fill: { color: '#EBF0F8' }, line: { color: 'white' } },
+									header: { fill: { color: '#C8D4E3' }, line: { color: 'white' } },
+									type: 'table'
+								}
+							]
+						},
+						layout: {
+							annotationdefaults: { arrowcolor: '#2a3f5f', arrowhead: 0, arrowwidth: 1 },
+							autotypenumbers: 'strict',
+							coloraxis: { colorbar: { outlinewidth: 0, ticks: '' } },
+							colorscale: {
+								diverging: [
+									[0, '#8e0152'],
+									[0.1, '#c51b7d'],
+									[0.2, '#de77ae'],
+									[0.3, '#f1b6da'],
+									[0.4, '#fde0ef'],
+									[0.5, '#f7f7f7'],
+									[0.6, '#e6f5d0'],
+									[0.7, '#b8e186'],
+									[0.8, '#7fbc41'],
+									[0.9, '#4d9221'],
+									[1, '#276419']
+								],
+								sequential: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								],
+								sequentialminus: [
+									[0, '#0d0887'],
+									[0.1111111111111111, '#46039f'],
+									[0.2222222222222222, '#7201a8'],
+									[0.3333333333333333, '#9c179e'],
+									[0.4444444444444444, '#bd3786'],
+									[0.5555555555555556, '#d8576b'],
+									[0.6666666666666666, '#ed7953'],
+									[0.7777777777777778, '#fb9f3a'],
+									[0.8888888888888888, '#fdca26'],
+									[1, '#f0f921']
+								]
+							},
+							colorway: [
+								'#636efa',
+								'#EF553B',
+								'#00cc96',
+								'#ab63fa',
+								'#FFA15A',
+								'#19d3f3',
+								'#FF6692',
+								'#B6E880',
+								'#FF97FF',
+								'#FECB52'
+							],
+							font: { color: '#2a3f5f' },
+							geo: {
+								bgcolor: 'white',
+								lakecolor: 'white',
+								landcolor: '#E5ECF6',
+								showlakes: !0,
+								showland: !0,
+								subunitcolor: 'white'
+							},
+							hoverlabel: { align: 'left' },
+							hovermode: 'closest',
+							mapbox: { style: 'light' },
+							paper_bgcolor: 'white',
+							plot_bgcolor: '#E5ECF6',
+							polar: {
+								angularaxis: { gridcolor: 'white', linecolor: 'white', ticks: '' },
+								bgcolor: '#E5ECF6',
+								radialaxis: { gridcolor: 'white', linecolor: 'white', ticks: '' }
+							},
+							scene: {
+								xaxis: {
+									backgroundcolor: '#E5ECF6',
+									gridcolor: 'white',
+									gridwidth: 2,
+									linecolor: 'white',
+									showbackground: !0,
+									ticks: '',
+									zerolinecolor: 'white'
+								},
+								yaxis: {
+									backgroundcolor: '#E5ECF6',
+									gridcolor: 'white',
+									gridwidth: 2,
+									linecolor: 'white',
+									showbackground: !0,
+									ticks: '',
+									zerolinecolor: 'white'
+								},
+								zaxis: {
+									backgroundcolor: '#E5ECF6',
+									gridcolor: 'white',
+									gridwidth: 2,
+									linecolor: 'white',
+									showbackground: !0,
+									ticks: '',
+									zerolinecolor: 'white'
+								}
+							},
+							shapedefaults: { line: { color: '#2a3f5f' } },
+							ternary: {
+								aaxis: { gridcolor: 'white', linecolor: 'white', ticks: '' },
+								baxis: { gridcolor: 'white', linecolor: 'white', ticks: '' },
+								bgcolor: '#E5ECF6',
+								caxis: { gridcolor: 'white', linecolor: 'white', ticks: '' }
+							},
+							title: { x: 0.05 },
+							xaxis: {
+								automargin: !0,
+								gridcolor: 'white',
+								linecolor: 'white',
+								ticks: '',
+								title: { standoff: 15 },
+								zerolinecolor: 'white',
+								zerolinewidth: 2
+							},
+							yaxis: {
+								automargin: !0,
+								gridcolor: 'white',
+								linecolor: 'white',
+								ticks: '',
+								title: { standoff: 15 },
+								zerolinecolor: 'white',
+								zerolinewidth: 2
+							}
+						}
+					},
+					title: { text: 'Job Listings by State' }
+				}
+			);
+		},
+		y = `<div class="input input-md"><span class="heading"><h1 id="finance-job-market-analysis">Finance Job Market Analysis<a href="#finance-job-market-analysis"> ¶</a></h1></span>
 <span class="heading"><h2 id="purpose">Purpose<a href="#purpose"> ¶</a></h2></span>
 <p>As a finance and management information systems major I wanted to learn more about the current (2022) job market before entering within the next couple years.</p>
 <span class="heading"><h3 id="questions">Questions<a href="#questions"> ¶</a></h3></span>
@@ -690,4 +1191,333 @@ figure {
 .output-html-table td {
   text-align: right;
   border: 0;
-}</style>`;return b.$$set=d=>{"img_path_prefix"in d&&r(2,u=d.img_path_prefix),"img_alt_text"in d&&r(3,i=d.img_alt_text)},[o,y,u,i]}class Ns extends As{constructor(a){super(),Cs(this,a,Ts,Ls,Ss,{img_path_prefix:2,img_alt_text:3})}}function Ds(b){let a;return{c(){a=x("Jupyter2Svelte")},l(r){a=j(r,"Jupyter2Svelte")},m(r,u){c(r,a,u)},d(r){r&&t(a)}}}function Ms(b){let a,r,u,i,o,y,d,w,v,q,Q,F,cs,X,I,is,Z,E,rs,ss,L,us,G,T,P,ts,U,N,as,O,D,z,ns,W,M,es,J,H,V,R,A,os,_,ps,Y,C,$;return _=new Es({props:{href:"https://daneski13.github.io/projects/jupyter2svelte",$$slots:{default:[Ds]},$$scope:{ctx:b}}}),C=new Ns({props:{img_path_prefix:"/projects/analyzing-finance-job-market/",img_alt_text:b[0]}}),{c(){a=p("p"),r=p("strong"),u=x("Technologies:"),i=h(),o=p("p"),y=p("img"),w=h(),v=p("img"),Q=h(),F=p("img"),X=h(),I=p("img"),Z=h(),E=p("img"),ss=h(),L=p("img"),G=h(),T=p("p"),P=p("strong"),ts=x("Data Manipulation Library:"),U=h(),N=p("p"),as=x("Pandas"),O=h(),D=p("p"),z=p("strong"),ns=x("Data Visualization Libraries:"),W=h(),M=p("p"),es=x("Seaborn, Plotly"),J=h(),H=p("hr"),V=h(),R=p("p"),A=p("strong"),os=x("Below is the Jupyter Notebook for this project, generated with "),ys(_.$$.fragment),ps=x(":"),Y=h(),ys(C.$$.fragment),this.h()},l(s){a=l(s,"P",{});var n=m(a);r=l(n,"STRONG",{});var B=m(r);u=j(B,"Technologies:"),B.forEach(t),n.forEach(t),i=g(s),o=l(s,"P",{});var f=m(o);y=l(f,"IMG",{src:!0,alt:!0}),w=g(f),v=l(f,"IMG",{src:!0,alt:!0}),Q=g(f),F=l(f,"IMG",{src:!0,alt:!0}),X=g(f),I=l(f,"IMG",{src:!0,alt:!0}),Z=g(f),E=l(f,"IMG",{src:!0,alt:!0}),ss=g(f),L=l(f,"IMG",{src:!0,alt:!0}),f.forEach(t),G=g(s),T=l(s,"P",{});var ds=m(T);P=l(ds,"STRONG",{});var ks=m(P);ts=j(ks,"Data Manipulation Library:"),ks.forEach(t),ds.forEach(t),U=g(s),N=l(s,"P",{});var hs=m(N);as=j(hs,"Pandas"),hs.forEach(t),O=g(s),D=l(s,"P",{});var gs=m(D);z=l(gs,"STRONG",{});var ms=m(z);ns=j(ms,"Data Visualization Libraries:"),ms.forEach(t),gs.forEach(t),W=g(s),M=l(s,"P",{});var fs=m(M);es=j(fs,"Seaborn, Plotly"),fs.forEach(t),J=g(s),H=l(s,"HR",{}),V=g(s),R=l(s,"P",{});var bs=m(R);A=l(bs,"STRONG",{});var K=m(A);os=j(K,"Below is the Jupyter Notebook for this project, generated with "),ws(_.$$.fragment,K),ps=j(K,":"),K.forEach(t),bs.forEach(t),Y=g(s),ws(C.$$.fragment,s),this.h()},h(){S(y.src,d="https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54")||k(y,"src",d),k(y,"alt","Python"),S(v.src,q="https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white")||k(v,"src",q),k(v,"alt","Jupyter Lab/Notebook"),S(F.src,cs="https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white")||k(F,"src",cs),k(F,"alt","Anaconda"),S(I.src,is="https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white")||k(I,"src",is),k(I,"alt","GitHub"),S(E.src,rs="https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white")||k(E,"src",rs),k(E,"alt","Git"),S(L.src,us="https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white")||k(L,"src",us),k(L,"alt","Visual Studio Code")},m(s,n){c(s,a,n),e(a,r),e(r,u),c(s,i,n),c(s,o,n),e(o,y),e(o,w),e(o,v),e(o,Q),e(o,F),e(o,X),e(o,I),e(o,Z),e(o,E),e(o,ss),e(o,L),c(s,G,n),c(s,T,n),e(T,P),e(P,ts),c(s,U,n),c(s,N,n),e(N,as),c(s,O,n),c(s,D,n),e(D,z),e(z,ns),c(s,W,n),c(s,M,n),e(M,es),c(s,J,n),c(s,H,n),c(s,V,n),c(s,R,n),e(R,A),e(A,os),vs(_,A,null),e(A,ps),c(s,Y,n),vs(C,s,n),$=!0},p(s,[n]){const B={};n&2&&(B.$$scope={dirty:n,ctx:s}),_.$set(B)},i(s){$||(_s(_.$$.fragment,s),_s(C.$$.fragment,s),$=!0)},o(s){xs(_.$$.fragment,s),xs(C.$$.fragment,s),$=!1},d(s){s&&t(a),s&&t(i),s&&t(o),s&&t(G),s&&t(T),s&&t(U),s&&t(N),s&&t(O),s&&t(D),s&&t(W),s&&t(M),s&&t(J),s&&t(H),s&&t(V),s&&t(R),js(_),s&&t(Y),js(C,s)}}}const Bs={title:"Analyzing Finance Job Postings",date:"2022-10-06",updated:"2023-04-17",card:"/projects/analyzing-finance-job-market/card.webp",cover:"/projects/analyzing-finance-job-market/cover.webp",description:"Exploratory Data Analysis of the Entry-Level Finance Job Market",code:"https://github.com/Daneski13/Analyzing-Finance-Job-Postings"};function Rs(b){return[["Bar Chart of the Top 10 Locations","Chart Showing Top 15 Industries","Chart Showing the Most In Demand Skills"]]}class qs extends As{constructor(a){super(),Cs(this,a,Rs,Ms,Ss,{})}}export{qs as default,Bs as metadata};
+}</style>`;
+	return (
+		(b.$$set = (d) => {
+			'img_path_prefix' in d && r(2, (u = d.img_path_prefix)),
+				'img_alt_text' in d && r(3, (i = d.img_alt_text));
+		}),
+		[o, y, u, i]
+	);
+}
+class Ns extends As {
+	constructor(a) {
+		super(), Cs(this, a, Ts, Ls, Ss, { img_path_prefix: 2, img_alt_text: 3 });
+	}
+}
+function Ds(b) {
+	let a;
+	return {
+		c() {
+			a = x('Jupyter2Svelte');
+		},
+		l(r) {
+			a = j(r, 'Jupyter2Svelte');
+		},
+		m(r, u) {
+			c(r, a, u);
+		},
+		d(r) {
+			r && t(a);
+		}
+	};
+}
+function Ms(b) {
+	let a,
+		r,
+		u,
+		i,
+		o,
+		y,
+		d,
+		w,
+		v,
+		q,
+		Q,
+		F,
+		cs,
+		X,
+		I,
+		is,
+		Z,
+		E,
+		rs,
+		ss,
+		L,
+		us,
+		G,
+		T,
+		P,
+		ts,
+		U,
+		N,
+		as,
+		O,
+		D,
+		z,
+		ns,
+		W,
+		M,
+		es,
+		J,
+		H,
+		V,
+		R,
+		A,
+		os,
+		_,
+		ps,
+		Y,
+		C,
+		$;
+	return (
+		(_ = new Es({
+			props: {
+				href: 'https://daneski13.github.io/projects/jupyter2svelte',
+				$$slots: { default: [Ds] },
+				$$scope: { ctx: b }
+			}
+		})),
+		(C = new Ns({
+			props: { img_path_prefix: '/projects/analyzing-finance-job-market/', img_alt_text: b[0] }
+		})),
+		{
+			c() {
+				(a = p('p')),
+					(r = p('strong')),
+					(u = x('Technologies:')),
+					(i = h()),
+					(o = p('p')),
+					(y = p('img')),
+					(w = h()),
+					(v = p('img')),
+					(Q = h()),
+					(F = p('img')),
+					(X = h()),
+					(I = p('img')),
+					(Z = h()),
+					(E = p('img')),
+					(ss = h()),
+					(L = p('img')),
+					(G = h()),
+					(T = p('p')),
+					(P = p('strong')),
+					(ts = x('Data Manipulation Library:')),
+					(U = h()),
+					(N = p('p')),
+					(as = x('Pandas')),
+					(O = h()),
+					(D = p('p')),
+					(z = p('strong')),
+					(ns = x('Data Visualization Libraries:')),
+					(W = h()),
+					(M = p('p')),
+					(es = x('Seaborn, Plotly')),
+					(J = h()),
+					(H = p('hr')),
+					(V = h()),
+					(R = p('p')),
+					(A = p('strong')),
+					(os = x('Below is the Jupyter Notebook for this project, generated with ')),
+					ys(_.$$.fragment),
+					(ps = x(':')),
+					(Y = h()),
+					ys(C.$$.fragment),
+					this.h();
+			},
+			l(s) {
+				a = l(s, 'P', {});
+				var n = m(a);
+				r = l(n, 'STRONG', {});
+				var B = m(r);
+				(u = j(B, 'Technologies:')), B.forEach(t), n.forEach(t), (i = g(s)), (o = l(s, 'P', {}));
+				var f = m(o);
+				(y = l(f, 'IMG', { src: !0, alt: !0 })),
+					(w = g(f)),
+					(v = l(f, 'IMG', { src: !0, alt: !0 })),
+					(Q = g(f)),
+					(F = l(f, 'IMG', { src: !0, alt: !0 })),
+					(X = g(f)),
+					(I = l(f, 'IMG', { src: !0, alt: !0 })),
+					(Z = g(f)),
+					(E = l(f, 'IMG', { src: !0, alt: !0 })),
+					(ss = g(f)),
+					(L = l(f, 'IMG', { src: !0, alt: !0 })),
+					f.forEach(t),
+					(G = g(s)),
+					(T = l(s, 'P', {}));
+				var ds = m(T);
+				P = l(ds, 'STRONG', {});
+				var ks = m(P);
+				(ts = j(ks, 'Data Manipulation Library:')),
+					ks.forEach(t),
+					ds.forEach(t),
+					(U = g(s)),
+					(N = l(s, 'P', {}));
+				var hs = m(N);
+				(as = j(hs, 'Pandas')), hs.forEach(t), (O = g(s)), (D = l(s, 'P', {}));
+				var gs = m(D);
+				z = l(gs, 'STRONG', {});
+				var ms = m(z);
+				(ns = j(ms, 'Data Visualization Libraries:')),
+					ms.forEach(t),
+					gs.forEach(t),
+					(W = g(s)),
+					(M = l(s, 'P', {}));
+				var fs = m(M);
+				(es = j(fs, 'Seaborn, Plotly')),
+					fs.forEach(t),
+					(J = g(s)),
+					(H = l(s, 'HR', {})),
+					(V = g(s)),
+					(R = l(s, 'P', {}));
+				var bs = m(R);
+				A = l(bs, 'STRONG', {});
+				var K = m(A);
+				(os = j(K, 'Below is the Jupyter Notebook for this project, generated with ')),
+					ws(_.$$.fragment, K),
+					(ps = j(K, ':')),
+					K.forEach(t),
+					bs.forEach(t),
+					(Y = g(s)),
+					ws(C.$$.fragment, s),
+					this.h();
+			},
+			h() {
+				S(
+					y.src,
+					(d =
+						'https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54')
+				) || k(y, 'src', d),
+					k(y, 'alt', 'Python'),
+					S(
+						v.src,
+						(q =
+							'https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white')
+					) || k(v, 'src', q),
+					k(v, 'alt', 'Jupyter Lab/Notebook'),
+					S(
+						F.src,
+						(cs =
+							'https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white')
+					) || k(F, 'src', cs),
+					k(F, 'alt', 'Anaconda'),
+					S(
+						I.src,
+						(is =
+							'https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white')
+					) || k(I, 'src', is),
+					k(I, 'alt', 'GitHub'),
+					S(
+						E.src,
+						(rs =
+							'https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white')
+					) || k(E, 'src', rs),
+					k(E, 'alt', 'Git'),
+					S(
+						L.src,
+						(us =
+							'https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white')
+					) || k(L, 'src', us),
+					k(L, 'alt', 'Visual Studio Code');
+			},
+			m(s, n) {
+				c(s, a, n),
+					e(a, r),
+					e(r, u),
+					c(s, i, n),
+					c(s, o, n),
+					e(o, y),
+					e(o, w),
+					e(o, v),
+					e(o, Q),
+					e(o, F),
+					e(o, X),
+					e(o, I),
+					e(o, Z),
+					e(o, E),
+					e(o, ss),
+					e(o, L),
+					c(s, G, n),
+					c(s, T, n),
+					e(T, P),
+					e(P, ts),
+					c(s, U, n),
+					c(s, N, n),
+					e(N, as),
+					c(s, O, n),
+					c(s, D, n),
+					e(D, z),
+					e(z, ns),
+					c(s, W, n),
+					c(s, M, n),
+					e(M, es),
+					c(s, J, n),
+					c(s, H, n),
+					c(s, V, n),
+					c(s, R, n),
+					e(R, A),
+					e(A, os),
+					vs(_, A, null),
+					e(A, ps),
+					c(s, Y, n),
+					vs(C, s, n),
+					($ = !0);
+			},
+			p(s, [n]) {
+				const B = {};
+				n & 2 && (B.$$scope = { dirty: n, ctx: s }), _.$set(B);
+			},
+			i(s) {
+				$ || (_s(_.$$.fragment, s), _s(C.$$.fragment, s), ($ = !0));
+			},
+			o(s) {
+				xs(_.$$.fragment, s), xs(C.$$.fragment, s), ($ = !1);
+			},
+			d(s) {
+				s && t(a),
+					s && t(i),
+					s && t(o),
+					s && t(G),
+					s && t(T),
+					s && t(U),
+					s && t(N),
+					s && t(O),
+					s && t(D),
+					s && t(W),
+					s && t(M),
+					s && t(J),
+					s && t(H),
+					s && t(V),
+					s && t(R),
+					js(_),
+					s && t(Y),
+					js(C, s);
+			}
+		}
+	);
+}
+const Bs = {
+	title: 'Analyzing Finance Job Postings',
+	date: '2022-10-06',
+	updated: '2023-04-17',
+	card: '/projects/analyzing-finance-job-market/card.webp',
+	cover: '/projects/analyzing-finance-job-market/cover.webp',
+	description: 'Exploratory Data Analysis of the Entry-Level Finance Job Market',
+	code: 'https://github.com/Daneski13/Analyzing-Finance-Job-Postings'
+};
+function Rs(b) {
+	return [
+		[
+			'Bar Chart of the Top 10 Locations',
+			'Chart Showing Top 15 Industries',
+			'Chart Showing the Most In Demand Skills'
+		]
+	];
+}
+class qs extends As {
+	constructor(a) {
+		super(), Cs(this, a, Rs, Ms, Ss, {});
+	}
+}
+export { qs as default, Bs as metadata };
