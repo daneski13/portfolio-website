@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center">
-  <a href="https://daneski13.github.io">Check it out</a>
+  <a href="https://daneskalski.com">Check it out</a>
 </p>
 
 This is my personal portfolio website built using [SvelteKit](https://github.com/sveltejs/kit) and Scss.

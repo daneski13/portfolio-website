@@ -34,6 +34,6 @@ Seaborn, Plotly
 
 ---
 
-**Below is the Jupyter Notebook for this project, generated with <Anchor href="https://daneski13.github.io/projects/jupyter2svelte">Jupyter2Svelte</Anchor>:**
+**Below is the Jupyter Notebook for this project, generated with <Anchor href="/projects/jupyter2svelte">Jupyter2Svelte</Anchor>:**
 
 <EDA img_path_prefix="/projects/analyzing-finance-job-market/" img_alt_text={alt_text}/>
