@@ -69,7 +69,7 @@ devDependencies:
     version: 1.9.0
   rehype-add-classes:
     specifier: github:tycol7/rehype-add-classes
-    version: github.com/tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497
+    version: git/github.com+tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497
   rehype-autolink-headings:
     specifier: ^6.1.1
     version: 6.1.1
@@ -2542,8 +2542,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497:
-    resolution: {tarball: https://codeload.github.com/tycol7/rehype-add-classes/tar.gz/0a4dc28fee61e1d41bb8f6978a4435965f3c8497}
+  git/github.com+tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497:
+    resolution: {commit: 0a4dc28fee61e1d41bb8f6978a4435965f3c8497, repo: git@github.com:tycol7/rehype-add-classes.git, type: git}
     name: rehype-add-classes
     version: 1.0.0
     dependencies:
