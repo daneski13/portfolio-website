@@ -28,7 +28,7 @@
 		"hastscript": "^7.2.0",
 		"install": "^0.13.0",
 		"mdsvex": "^0.10.6",
-		"npm": "^8.19.4",
+		"npm": "^9.8.1",
 		"postcss": "^8.4.27",
 		"prettier": "^2.8.8",
 		"prettier-plugin-svelte": "^2.10.1",

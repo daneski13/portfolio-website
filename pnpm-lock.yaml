@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^0.10.6
     version: 0.10.6(svelte@3.59.2)
   npm:
-    specifier: ^8.19.4
-    version: 8.19.4
+    specifier: ^9.8.1
+    version: 9.8.1
   postcss:
     specifier: ^8.4.27
     version: 8.4.27
@@ -69,7 +69,7 @@ devDependencies:
     version: 1.9.0
   rehype-add-classes:
     specifier: github:tycol7/rehype-add-classes
-    version: github.com/tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497
+    version: git/github.com+tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497
   rehype-autolink-headings:
     specifier: ^6.1.1
     version: 6.1.1
@@ -1745,25 +1745,25 @@ packages:
     resolution: {integrity: sha512-5PDmaAsVfnWUgTUbJ3ERwn7u79Z0dYxN9ErxCpVJJqe2RK0PJ3z+iFUxuqjwtlDDegXvtWoxD/3Fzxox7tFGWA==}
     dev: true
 
-  /npm@8.19.4:
-    resolution: {integrity: sha512-3HANl8i9DKnUA89P4KEgVNN28EjSeDCmvEqbzOAuxCFDzdBZzjUl99zgnGpOUumvW5lvJo2HKcjrsc+tfyv1Hw==}
-    engines: {node: ^12.13.0 || ^14.15.0 || >=16.0.0}
+  /npm@9.8.1:
+    resolution: {integrity: sha512-AfDvThQzsIXhYgk9zhbk5R+lh811lKkLAeQMMhSypf1BM7zUafeIIBzMzespeuVEJ0+LvY36oRQYf7IKLzU3rw==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     hasBin: true
     dev: true
     bundledDependencies:
       - '@isaacs/string-locale-compare'
       - '@npmcli/arborist'
-      - '@npmcli/ci-detect'
       - '@npmcli/config'
       - '@npmcli/fs'
       - '@npmcli/map-workspaces'
       - '@npmcli/package-json'
+      - '@npmcli/promise-spawn'
       - '@npmcli/run-script'
       - abbrev
       - archy
       - cacache
       - chalk
-      - chownr
+      - ci-info
       - cli-columns
       - cli-table3
       - columnify
@@ -1791,8 +1791,6 @@ packages:
       - minimatch
       - minipass
       - minipass-pipeline
-      - mkdirp
-      - mkdirp-infer-owner
       - ms
       - node-gyp
       - nopt
@@ -1804,19 +1802,16 @@ packages:
       - npm-registry-fetch
       - npm-user-validate
       - npmlog
-      - opener
       - p-map
       - pacote
       - parse-conflict-json
       - proc-log
       - qrcode-terminal
       - read
-      - read-package-json
-      - read-package-json-fast
-      - readdir-scoped-modules
-      - rimraf
       - semver
+      - sigstore
       - ssri
+      - supports-color
       - tar
       - text-table
       - tiny-relative-date
@@ -2542,8 +2537,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497:
-    resolution: {tarball: https://codeload.github.com/tycol7/rehype-add-classes/tar.gz/0a4dc28fee61e1d41bb8f6978a4435965f3c8497}
+  git/github.com+tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497:
+    resolution: {commit: 0a4dc28fee61e1d41bb8f6978a4435965f3c8497, repo: git@github.com:tycol7/rehype-add-classes.git, type: git}
     name: rehype-add-classes
     version: 1.0.0
     dependencies:
