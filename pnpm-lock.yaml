@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^0.11.0
     version: 0.11.0(svelte@4.2.0)
   npm:
-    specifier: ^9.8.1
-    version: 9.8.1
+    specifier: ^10.1.0
+    version: 10.1.0
   postcss:
     specifier: ^8.4.29
     version: 8.4.29
@@ -69,7 +69,7 @@ devDependencies:
     version: 1.9.0
   rehype-add-classes:
     specifier: github:tycol7/rehype-add-classes
-    version: github.com/tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497
+    version: git/github.com+tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497
   rehype-autolink-headings:
     specifier: ^6.1.1
     version: 6.1.1
@@ -1881,9 +1881,9 @@ packages:
     resolution: {integrity: sha512-5PDmaAsVfnWUgTUbJ3ERwn7u79Z0dYxN9ErxCpVJJqe2RK0PJ3z+iFUxuqjwtlDDegXvtWoxD/3Fzxox7tFGWA==}
     dev: true
 
-  /npm@9.8.1:
-    resolution: {integrity: sha512-AfDvThQzsIXhYgk9zhbk5R+lh811lKkLAeQMMhSypf1BM7zUafeIIBzMzespeuVEJ0+LvY36oRQYf7IKLzU3rw==}
-    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
+  /npm@10.1.0:
+    resolution: {integrity: sha512-pZ2xybXzNGbJFZEKNbPoEXsE38Xou9VTnxxBk+B3pz0ndsGCs7iWHoUCPSsISU2hjmkWfDkJo3bYKE8RDOg4eg==}
+    engines: {node: ^18.17.0 || >=20.5.0}
     hasBin: true
     dev: true
     bundledDependencies:
@@ -1895,6 +1895,7 @@ packages:
       - '@npmcli/package-json'
       - '@npmcli/promise-spawn'
       - '@npmcli/run-script'
+      - '@sigstore/tuf'
       - abbrev
       - archy
       - cacache
@@ -1945,7 +1946,6 @@ packages:
       - qrcode-terminal
       - read
       - semver
-      - sigstore
       - ssri
       - supports-color
       - tar
@@ -2776,8 +2776,8 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: true
 
-  github.com/tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497:
-    resolution: {tarball: https://codeload.github.com/tycol7/rehype-add-classes/tar.gz/0a4dc28fee61e1d41bb8f6978a4435965f3c8497}
+  git/github.com+tycol7/rehype-add-classes/0a4dc28fee61e1d41bb8f6978a4435965f3c8497:
+    resolution: {commit: 0a4dc28fee61e1d41bb8f6978a4435965f3c8497, repo: git@github.com:tycol7/rehype-add-classes.git, type: git}
     name: rehype-add-classes
     version: 1.0.0
     dependencies:
