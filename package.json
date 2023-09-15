@@ -37,7 +37,7 @@
 		"rehype-autolink-headings": "^6.1.1",
 		"rehype-katex": "^6.0.3",
 		"rehype-katex-svelte": "^1.2.0",
-		"rehype-slug": "^5.1.0",
+		"rehype-slug": "^6.0.0",
 		"remark-attr": "^0.11.1",
 		"remark-math": "^5.1.1",
 		"sass": "^1.67.0",
