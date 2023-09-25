@@ -24,7 +24,7 @@
 		"autoprefixer": "^10.4.15",
 		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
-		"eslint-plugin-svelte": "^2.33.1",
+		"eslint-plugin-svelte": "^2.33.2",
 		"hastscript": "^8.0.0",
 		"install": "^0.13.0",
 		"mdsvex": "^0.11.0",
