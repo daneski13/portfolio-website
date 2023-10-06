@@ -40,23 +40,30 @@
 
 			<div class="about__blurb">
 				<p>
-					I am an honors undergraduate student entering my Senior year at Washington State
-					University studying Finance and Management Information Systems (MIS).
+					I am an honors undergraduate student in Finance and Management Information Systems (MIS)
+					at Washington State University in my Senior year. My excitement and interest lie at the
+					intersection of finance, economics, and cutting-edge technologies, particularly in
+					harnessing data analysis to drive business decisions.
 				</p>
 				<p>
-					I am passionate about exploring financial markets, economics, and cutting-edge
-					technologies. I also enjoy working with and learning about computers. Through coursework,
-					projects, and self-study, I have developed a solid foundation of knowledge and skills in
-					these areas.
+					In my academic journey within the field of finance, I have concentrated my efforts on
+					investment analysis and risk management. These areas have provided me with valuable
+					insights, particularly in my current role as a Technology Sector Portfolio Analyst for the
+					Cougar Investment Fund. For MIS, my primary focus has been in the domains of data
+					analysis, business intelligence, and project management. Additionally, I am proud to hold
+					a certification as a Professional Scrum Master, which reflects my expertise and commitment
+					to agile project management and development methods.
 				</p>
 				<p>
-					Looking ahead, I plan to continue expanding my knowledge and skills in data analysis,
-					machine learning, and computer science, with a focus on their applications in finance.
+					As I move forward, I am committed to expanding my expertise in data analysis, machine
+					learning, and computer science, with a specific focus on their applications within the
+					financial industry. I believe that staying at the forefront of technological advancements
+					will empower me to contribute significantly to the growth and success of financial
+					services firms and technology companies.
 				</p>
 				<p>
 					Outside of academic and career aspirations, I enjoy movies and television shows, traveling
-					to explore new cultures and places, playing golf, snowboarding, and staying active to keep
-					my mind and body energized.
+					to explore new cultures and places, playing golf, snowboarding, and staying active.
 				</p>
 			</div>
 		</section>
