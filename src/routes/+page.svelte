@@ -57,9 +57,9 @@
 				<p>
 					As I move forward, I am committed to expanding my expertise in data analysis, machine
 					learning, and computer science, with a specific focus on their applications within the
-					financial industry. I believe that staying at the forefront of technological advancements
-					will empower me to contribute significantly to the growth and success of financial
-					services firms and technology companies.
+					financial and technology industries. I believe that staying at the forefront of
+					technological advancements will empower me to contribute significantly to the growth and
+					success of financial services firms and technology companies.
 				</p>
 				<p>
 					Outside of academic and career aspirations, I enjoy movies and television shows, traveling
