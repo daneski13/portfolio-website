@@ -12,7 +12,7 @@
 	};
 
 	const raw = `<div class="input input-md"><span class="heading"><h1 id="apple-regression-analysis">Apple Regression Analysis<a href="#apple-regression-analysis"> ¶</a></h1></span>
-<p><strong>This analysis was completed as part of my Intermediate Financial Management (FIN 425) course project at Washington State University.</strong></p>
+<p><strong>This project was inspired by a course project for Intermediate Financial Management (FIN 425) at Washington State University.</strong></p>
 <span class="heading"><h2 id="purpose">Purpose<a href="#purpose"> ¶</a></h2></span>
 <p>This notebook aims to analyze the systematic risks associated with a new smartphone manufacturing and launch project that a firm is considering. Given the significant investment required for this project, the firm desires a more in-depth understanding of the systematic risk and is seeking recommendations to make an informed decision.</p>
 <p>The Scenario:</p>
