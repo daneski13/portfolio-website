@@ -6,6 +6,7 @@
 		return 'Image';
 	});
 
+	import { onMount } from 'svelte';
 	// Render Plotly plots, called when the Plotly script is loaded
 	const renderPlotly = () => {
 		/* Plotly Plots */
@@ -491,15 +492,17 @@ td {
 }
 
 </style>`;
+	onMount(() => {
+		const script = document.createElement('script');
+		script.onload = () => {
+			if (Plotly) {
+				renderPlotly();
+			}
+		};
+		script.src = 'https://cdn.plot.ly/plotly-2.20.0.min.js';
+		document.head.appendChild(script);
+	});
 </script>
-
-<svelte:head>
-	<script
-		src="https://cdn.plot.ly/plotly-2.20.0.min.js"
-		charset="utf-8"
-		on:load={renderPlotly}
-	></script>
-</svelte:head>
 
 <div class="jupyter">
 	{@html raw}
