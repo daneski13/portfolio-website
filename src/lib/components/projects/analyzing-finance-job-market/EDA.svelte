@@ -825,7 +825,7 @@ linkedin<span class="token punctuation">.</span>to_csv<span class="token punctua
 <span class="heading"><h3 id="loading-the-data">Loading the data<a href="#loading-the-data"> ¶</a></h3></span>
 <p>After cleaning there are 28,634 unique listings.</p></div><div class="input input-code"><pre class="language-python"><code class="language-python"><span class="token keyword">import</span> pandas <span class="token keyword">as</span> pd
 
-<span class="token comment"># Visualisation</span>
+<span class="token comment"># Visualization</span>
 <span class="token operator">%</span>matplotlib inline
 <span class="token keyword">import</span> seaborn <span class="token keyword">as</span> sns
 
