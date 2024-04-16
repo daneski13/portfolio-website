@@ -40,13 +40,15 @@
 
 			<div class="about__blurb">
 				<p>
-					I am an undergraduate student studying Finance and Management Information Systems, with a
-					passion for finance, economics, and cutting-edge technologies.
+					I am an undergraduate student studying Management Information Systems and Finance
+					graduating May 2024. I have a passion for technology and enjoy working on projects where I
+					can apply my analytical mindset and problem-solving skills.
 				</p>
 				<p>
-					I'm also an autodidactic with interests in data analysis, computer science, statistics,
-					machine learning, and artificial intelligence. I enjoy movies and television shows,
-					traveling, playing golf, and snowboarding.
+					I'm also an autodidactic with interests in data analysis, data science, computer science,
+					statistics, machine learning, and artificial intelligence. I enjoy movies and television
+					shows, traveling, playing golf, cooking, fitness, and spending time with friends and
+					family.
 				</p>
 			</div>
 		</section>
@@ -114,9 +116,7 @@
 			&_bottom {
 				max-width: 6.2em;
 				width: 12ch;
-				animation:
-					typing 1.4s steps(14) both 0.8s,
-					blink 1s infinite 2.2s;
+				animation: typing 1.4s steps(14) both 0.8s, blink 1s infinite 2.2s;
 			}
 
 			&::after {
