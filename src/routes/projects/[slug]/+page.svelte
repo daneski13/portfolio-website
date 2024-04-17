@@ -3,7 +3,7 @@
 	import type { ProjectData } from './data';
 
 	export let data: ProjectData;
-	const { content, title, date, isUpdated, updated, cover, description, code, url } = data;
+	const { content, title, date, isUpdated, updated, cover, description, proj_url, url } = data;
 </script>
 
 <svelte:head>
@@ -27,7 +27,9 @@
 					<p class="project__meta__date"><b>Updated:</b> {updated}</p>
 				{/if}
 			</span>
-			<a class="project__meta__source" href={code} target="_blank" rel="external">View Project</a>
+			<a class="project__meta__source" href={proj_url} target="_blank" rel="external"
+				>View Project</a
+			>
 		</div>
 		<div class="project__content">
 			<svelte:component this={content} />
@@ -41,7 +43,7 @@
 	.project {
 		font-size: 112.5%;
 		@include margin-horiz;
-		margin-top: 3em;
+		margin-top: 1.5em;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 

@@ -7,16 +7,18 @@
 
 <article class="card">
 	<div class="card__container">
-		<!-- Wrapping the image in a div fixes some weird bug on mobile where its border radius is wonky -->
-		<div>
-			<img class="card__image" alt="{title} Preview Image" src={image} />
-		</div>
-		<div class="card__title-container">
-			<h3 class="card__title">{title}</h3>
-		</div>
-		<a href={url} class="card__info">
-			<p class="card__info__desc">{description}</p>
-			<p class="card__info__action">See Details</p>
+		<a href={url}>
+			<!-- Wrapping the image in a div fixes some weird bug on mobile where its border radius is wonky -->
+			<div>
+				<img class="card__image" alt="{title} Preview Image" src={image} />
+			</div>
+			<div class="card__title-container">
+				<h3 class="card__title">{title}</h3>
+			</div>
+			<div class="card__info">
+				<p class="card__info__desc">{description}</p>
+				<p class="card__info__action">See Details</p>
+			</div>
 		</a>
 	</div>
 </article>

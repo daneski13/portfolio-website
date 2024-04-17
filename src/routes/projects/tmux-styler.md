@@ -5,7 +5,7 @@ date: '2023-09-07'
 card: /projects/tmux-styler/card.webp
 cover: /projects/tmux-styler/cover.webp
 description: A tmux plugin offering an easy way to style a tmux setup.
-code: https://github.com/daneski13/tmux-styler
+proj_url: https://github.com/daneski13/tmux-styler
 ---
 
 <script>

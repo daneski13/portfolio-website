@@ -5,7 +5,7 @@ date: '2023-04-05'
 card: /projects/junco-keyboard/card.webp
 cover: /projects/junco-keyboard/cover.webp
 description: Ergonomic split keyboard powered by Raspberry Pi Picos
-code: https://github.com/Daneski13/Junco
+proj_url: https://github.com/Daneski13/Junco
 ---
 
 <script>

@@ -5,7 +5,7 @@ updated: '2023-01-25'
 card: /projects/portfolio-website/card.webp
 cover: /projects/portfolio-website/cover.webp
 description: This website, my portfolio where I showcase my work.
-code: https://github.com/Daneski13/portfolio-website
+proj_url: https://github.com/Daneski13/portfolio-website
 ---
 
 My portfolio site.

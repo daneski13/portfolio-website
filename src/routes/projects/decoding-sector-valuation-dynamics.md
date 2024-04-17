@@ -4,8 +4,8 @@ date: '2024-04-16'
 # updated: '2023-05-07'
 card: /projects/decoding-sector-valuation-dynamics/card.webp
 cover: /projects/decoding-sector-valuation-dynamics/cover.webp
-description: "Honors Thesis - Decoding Sector Valuation Dynamics: Exploring the Nexus of Company Fundamentals, Economic Indicators, and Equity Valuations via Predictive Analytics"
-code: /projects/decoding-sector-valuation-dynamics/Decoding Sector Valuation Dynamics.pdf
+description: "Honors Thesis - Decoding Sector Valuation Dynamics"
+proj_url: /projects/decoding-sector-valuation-dynamics/Decoding Sector Valuation Dynamics.pdf
 ---
 
 **Technologies:**

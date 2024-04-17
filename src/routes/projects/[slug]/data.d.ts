@@ -9,7 +9,7 @@ export type ProjectData = {
 	card: string;
 	cover: string;
 	description: string;
-	code: string;
+	proj_url: string;
 	url: string;
 	slug: string;
 };

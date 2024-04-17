@@ -5,7 +5,7 @@ updated: '2023-08-06'
 card: /projects/jupyter2svelte/card.webp
 cover: /projects/jupyter2svelte/cover.webp
 description: Convert Jupyter Notebooks into Svelte Components
-code: https://www.npmjs.com/package/jupyter2svelte
+proj_url: https://www.npmjs.com/package/jupyter2svelte
 ---
 
 <script>

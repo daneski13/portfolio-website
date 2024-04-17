@@ -1,5 +1,5 @@
 <footer class="footer">
-	<p class="footer__copyright">&#169; 2023 Dane Skalski</p>
+	<p class="footer__copyright">&#169; 2024 Dane Skalski</p>
 </footer>
 
 <style lang="scss">

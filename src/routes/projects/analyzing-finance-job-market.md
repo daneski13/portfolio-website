@@ -5,7 +5,7 @@ updated: '2023-04-17'
 card: /projects/analyzing-finance-job-market/card.webp
 cover: /projects/analyzing-finance-job-market/cover.webp
 description: Exploratory Data Analysis of the Entry-Level Finance Job Market
-code: https://github.com/daneski13/Analyzing-Finance-Job-Market
+proj_url: https://github.com/daneski13/Analyzing-Finance-Job-Market
 ---
 
 <script>
