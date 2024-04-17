@@ -3,12 +3,17 @@
 	import type { ProjectData } from './data';
 
 	export let data: ProjectData;
-	const { content, title, date, isUpdated, updated, cover, description, code } = data;
+	const { content, title, date, isUpdated, updated, cover, description, code, url } = data;
 </script>
 
 <svelte:head>
 	<title>{title} - Projects</title>
 	<meta name="description" content={description} />
+	<meta property="og:title" content="Project - {title}" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://daneskalski.com/{url}" />
+	<meta property="og:image" content="https://daneskalski.com{cover}" />
+	<meta property="og:site_name" content="Dane Skalski - Portfolio" />
 </svelte:head>
 
 <main>

@@ -10,5 +10,6 @@ export type ProjectData = {
 	cover: string;
 	description: string;
 	code: string;
+	url: string;
 	slug: string;
 };

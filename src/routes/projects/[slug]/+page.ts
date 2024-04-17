@@ -33,6 +33,7 @@ export async function load({ params }) {
 		cover: meta.cover,
 		description: meta.description,
 		code: meta.code,
+		url: meta.card.split('/')[2],
 		slug: params.slug
 	};
 

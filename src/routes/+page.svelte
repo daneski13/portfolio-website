@@ -7,6 +7,10 @@
 <svelte:head>
 	<title>Dane Skalski - Portfolio</title>
 	<meta name="description" content="Portfolio website showcasing my work." />
+	<meta property="og:title" content="Dane Skalski - Portfolio" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://daneskalski.com/" />
+	<meta property="og:image" content="https://daneskalski.com/cover.webp" />
 </svelte:head>
 
 <main>
@@ -116,7 +120,9 @@
 			&_bottom {
 				max-width: 6.2em;
 				width: 12ch;
-				animation: typing 1.4s steps(14) both 0.8s, blink 1s infinite 2.2s;
+				animation:
+					typing 1.4s steps(14) both 0.8s,
+					blink 1s infinite 2.2s;
 			}
 
 			&::after {
