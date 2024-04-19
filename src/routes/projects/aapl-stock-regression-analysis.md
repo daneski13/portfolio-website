@@ -5,7 +5,7 @@ updated: '2023-05-07'
 card: /projects/aapl-stock-regression-analysis/card.webp
 cover: /projects/aapl-stock-regression-analysis/Output_10_1.webp
 description: Regression Analysis of Apple Inc. (AAPL) stock returns from 2017 to 2022
-proj_url: https://github.com/Daneski13/AAPL-Stock-Regression-Analysis
+proj_url: https://github.com/daneski13/AAPL-Stock-Regression-Analysis
 ---
 
 <script>

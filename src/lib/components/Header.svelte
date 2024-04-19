@@ -21,7 +21,7 @@
 			</svg>
 		</a>
 		<a
-			href="https://github.com/Daneski13"
+			href="https://github.com/daneski13"
 			target="_blank"
 			rel="noreferrer noopener external"
 			aria-label="Link to my Github Account"
