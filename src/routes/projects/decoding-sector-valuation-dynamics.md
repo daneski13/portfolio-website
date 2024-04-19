@@ -1,7 +1,7 @@
 ---
 title: Decoding Sector Valuation Dynamics
 date: '2024-04-16'
-# updated: '2023-05-07'
+updated: '2024-04-18'
 card: /projects/decoding-sector-valuation-dynamics/card.webp
 cover: /projects/decoding-sector-valuation-dynamics/cover.webp
 description: "Honors Thesis - Decoding Sector Valuation Dynamics"
@@ -14,23 +14,26 @@ proj_url: /projects/decoding-sector-valuation-dynamics/Decoding Sector Valuation
 ![LaTeX](https://img.shields.io/badge/latex-%23008080.svg?style=for-the-badge&logo=latex&logoColor=white)
 ![Jupyter Lab/Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
 ![Anaconda](https://img.shields.io/badge/Anaconda-%2344A833.svg?style=for-the-badge&logo=anaconda&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-**Data Manipulation Library:**
+**Data Manipulation and Visualization Libraries:**
 
-Pandas
+Pandas, Matplotlib, Seaborn, Plotly
 
 **Machine Learning Libraries:**
 
-cuML, LightGBM
+cuML, LightGBM, DBSCAN
+
+**Other Libraries:**
+
+SciPy, Statsmodels, NumPy, CuPy
 
 ---
 
-Decoding Sector Valuation Dynamics is my honors thesis that explores the drivers of equity valuations within Global Industry Classification Standard (GICS) sectors. The thesis is structured as a predictive analytics project that leverages company fundamentals, economic indicators, and equity valuations to explain the variance in stock returns. The project was conducted in Python using Jupyter Lab and the final report written in LaTeX.
+My honors thesis, "Decoding Sector Valuation Dynamics," explores the drivers of equity valuations within Global Industry Classification Standard (GICS) sectors. It takes the form of a predictive analytics project, where I utilize company fundamentals, economic indicators, and various commodities to explain the variance in stock returns. I conducted the project using Python, employing multivariate regression and gradient-boosted decision tree models within Jupyter notebooks. The final report was composed in LaTeX.
 
-Note that this is a draft document, the final version will be uploaded upon completion of revisions following advisor feedback and the thesis defense.
+**Note that this is a draft document, the final version will be uploaded upon completion of revisions following advisor feedback and the thesis defense.**
 
 ## Précis
 
