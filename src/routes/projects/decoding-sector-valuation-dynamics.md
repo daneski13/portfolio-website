@@ -1,10 +1,10 @@
 ---
 title: Decoding Sector Valuation Dynamics
 date: '2024-04-16'
-updated: '2024-04-18'
+updated: '2024-04-29'
 card: /projects/decoding-sector-valuation-dynamics/card.webp
 cover: /projects/decoding-sector-valuation-dynamics/cover.webp
-description: "Honors Thesis - Decoding Sector Valuation Dynamics"
+description: 'Honors Thesis - Decoding Sector Valuation Dynamics'
 proj_url: /projects/decoding-sector-valuation-dynamics/Decoding Sector Valuation Dynamics.pdf
 ---
 
@@ -23,17 +23,17 @@ Pandas, Matplotlib, Seaborn, Plotly
 
 **Machine Learning Libraries:**
 
-cuML, LightGBM, DBSCAN
+cuML, LightGBM
 
 **Other Libraries:**
 
-SciPy, Statsmodels, NumPy, CuPy
+SHAP, SciPy, Statsmodels, NumPy, CuPy
 
 ---
 
 My honors thesis, "Decoding Sector Valuation Dynamics," explores the drivers of equity valuations within Global Industry Classification Standard (GICS) sectors. It takes the form of a predictive analytics project, where I utilize company fundamentals, economic indicators, and various commodities to explain the variance in stock returns. I conducted the project using Python, employing multivariate regression and gradient-boosted decision tree models within Jupyter notebooks. The final report was composed in LaTeX.
 
-**Note that this is a draft document, the final version will be uploaded upon completion of revisions following advisor feedback and the thesis defense.**
+**Note that this is a draft document, the final version and associated code will be uploaded upon completion of revisions following advisor feedback and the thesis defense.**
 
 ## Précis
 
@@ -45,6 +45,6 @@ The analysis employed both linear regression and gradient-boosted decision tree 
 
 The identified drivers provide crucial insights that can enhance investors' decision-making, improve valuation modeling practices, and strengthen risk management strategies. By uncovering these pivotal factors, the study aims to guide market participants in navigating the complexities of financial markets with greater foresight.
 
-Future research could explore the incorporation of additional data sources, such as forward guidance from companies, analyst forecasts, and social media sentiment analysis, to further enhance the predictive power of the models. Additionally, investigating industry-specific, sub-industry-specific, and global market dynamics could furnish valuable insights into the determinants of equity valuation transcending the context of the United States and broad sector approach.
+Future research could explore the incorporation of additional data sources, such as forward guidance from companies, analyst forecasts, news events, and social media sentiment, to further enhance the predictive power of the models. Additionally, investigating industry-specific, sub-industry-specific, and global market dynamics could furnish valuable insights into the determinants of equity valuation transcending the context of the United States and broad sector approach.
 
 Overall, this study contributes to a more comprehensive understanding of the dynamic forces shaping equity valuations, empowering investors, analysts, and industry stakeholders to make more informed decisions and refine their valuation methodologies.
