@@ -67,6 +67,7 @@
 						image={project.meta.card}
 						url={project.path}
 						description={project.meta.description}
+						tag={project.meta.tag}
 					/>
 				{/each}
 			</div>
@@ -120,7 +121,9 @@
 			&_bottom {
 				max-width: 6.2em;
 				width: 12ch;
-				animation: typing 1.4s steps(14) both 0.8s, blink 1s infinite 2.2s;
+				animation:
+					typing 1.4s steps(14) both 0.8s,
+					blink 1s infinite 2.2s;
 			}
 
 			&::after {

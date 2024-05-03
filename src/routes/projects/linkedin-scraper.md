@@ -6,6 +6,7 @@ card: /projects/linkedin-scraper/card.webp
 cover: /projects/linkedin-scraper/cover.webp
 description: Web scraper for LinkedIn job postings
 proj_url: https://github.com/daneski13/linkedin-job-scraper
+tag: Tool, Web
 ---
 
 **Technologies:**

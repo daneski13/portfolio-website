@@ -11,5 +11,6 @@ export type ProjectData = {
 	description: string;
 	proj_url: string;
 	url: string;
+	tag: string;
 	slug: string;
 };

@@ -6,6 +6,7 @@ card: /projects/junco-keyboard/card.webp
 cover: /projects/junco-keyboard/cover.webp
 description: Ergonomic split keyboard powered by Raspberry Pi Picos
 proj_url: https://github.com/daneski13/Junco
+tag: Hardware, Systems Programming
 ---
 
 <script>

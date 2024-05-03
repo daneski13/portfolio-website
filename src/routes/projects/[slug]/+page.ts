@@ -34,6 +34,7 @@ export async function load({ params }) {
 		description: meta.description,
 		proj_url: meta.proj_url,
 		url: meta.card.split('/')[2],
+		tag: meta.tag,
 		slug: params.slug
 	};
 

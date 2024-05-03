@@ -6,6 +6,7 @@ card: /projects/tmux-styler/card.webp
 cover: /projects/tmux-styler/cover.webp
 description: A tmux plugin offering an easy way to style a tmux setup.
 proj_url: https://github.com/daneski13/tmux-styler
+tag: Tool
 ---
 
 <script>

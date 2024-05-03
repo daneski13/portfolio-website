@@ -9,14 +9,21 @@
 			<use href="/logo.svg#logo" />
 		</svg>
 	</a>
-	<div class="header__socials">
+	<div class="header__icons">
+		<a href="/" target="_self" rel="index">
+			<svg class="header__icons__link" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+				<title>Navigate Home</title>
+				<use href="/home.svg#home" />
+			</svg>
+		</a>
 		<a
 			href="https://www.linkedin.com/in/dane-skalski/"
 			target="_blank"
 			rel="noreferrer noopener external"
 			aria-label="Link to my LinkedIn Account"
 		>
-			<svg class="header__socials__link" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+			<svg class="header__icons__link" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+				<title>Open LinkedIn Profile</title>
 				<use href="/linkedin.svg#linkedin" />
 			</svg>
 		</a>
@@ -26,7 +33,8 @@
 			rel="noreferrer noopener external"
 			aria-label="Link to my Github Account"
 		>
-			<svg class="header__socials__link" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+			<svg class="header__icons__link" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+				<title>Open Github Profile</title>
 				<use href="/github.svg#github" />
 			</svg>
 		</a>
@@ -38,7 +46,6 @@
 
 	.header {
 		display: flex;
-		justify-content: space-between;
 		background-color: rgb(255, 255, 255, 0.9);
 		backdrop-filter: blur(10px);
 		position: sticky;
@@ -52,9 +59,9 @@
 			margin-right: auto;
 		}
 
-		&__socials {
+		&__icons {
 			display: flex;
-			gap: 1.5rem;
+			gap: 1rem;
 			margin: 1.5rem 0;
 			margin-right: var(--margin-left-right);
 

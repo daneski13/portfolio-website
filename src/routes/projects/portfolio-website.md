@@ -6,6 +6,7 @@ card: /projects/portfolio-website/card.webp
 cover: /projects/portfolio-website/cover.webp
 description: This website, my portfolio where I showcase my work.
 proj_url: https://github.com/daneski13/portfolio-website
+tag: Web
 ---
 
 My portfolio site.

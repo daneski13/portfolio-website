@@ -6,6 +6,7 @@ card: /projects/decoding-sector-valuation-dynamics/card.webp
 cover: /projects/decoding-sector-valuation-dynamics/cover.webp
 description: 'Honors Thesis - Decoding Sector Valuation Dynamics'
 proj_url: /projects/decoding-sector-valuation-dynamics/Decoding Sector Valuation Dynamics.pdf
+tag: Research, Machine Learning, Regression Analysis
 ---
 
 **Technologies:**

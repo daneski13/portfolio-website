@@ -3,11 +3,18 @@
 	export let image: string;
 	export let description: string;
 	export let url: string;
+	export let tag: string;
+	let tags = tag.split(',').map((tag) => tag.trim());
 </script>
 
 <article class="card">
 	<div class="card__container">
 		<a href={url}>
+			<div class="card__tags">
+				{#each tags as t}
+					<p class="card__tags__text">{t}</p>
+				{/each}
+			</div>
 			<!-- Wrapping the image in a div fixes some weird bug on mobile where its border radius is wonky -->
 			<div>
 				<img class="card__image" alt="{title} Preview Image" src={image} />
@@ -97,6 +104,26 @@
 			}
 		}
 
+		&__tags {
+			position: absolute;
+			top: 10px;
+			left: 7px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0px;
+			&__text {
+				background-color: var(--comp-color);
+				text-align: center;
+				@include shadow($y: 1px);
+				color: white;
+				border: 1px solid black;
+				padding: 0.4rem 0.8rem;
+				font-size: 0.8rem;
+				border-radius: 100px;
+				margin: 3px 3px;
+			}
+		}
+
 		&__image {
 			width: 100%;
 			height: 100%;
@@ -129,6 +156,10 @@
 
 			.card__title {
 				font-size: 1.5rem;
+			}
+
+			.card__tags__text {
+				font-size: 1rem;
 			}
 		}
 	}

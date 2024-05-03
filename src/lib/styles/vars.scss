@@ -1,5 +1,6 @@
 :root {
 	--primary-color: hsl(196, 100%, 70%);
+	--comp-color: hsl(16, 100%, 70%);
 	--primary-color-opacity: hsla(196, 100%, 70%, 0.5);
 	--background-color: #f9f9f9;
 	--margin-left-right: 8vw;
@@ -26,7 +27,7 @@
 	}
 
 	// Heading sizes
-	$heading-scale: 0.4; // heading step size in em
+	$heading-scale: 0.2; // heading step size in em
 	$max-heading: 5; // max heading size (unlikely to use smaller than h4 or h5)
 	@for $i from 1 through $max-heading {
 		h#{$i} {
@@ -39,6 +40,15 @@
 	:root {
 		--margin-left-right: 10vw;
 		--header-height: 6.75rem;
+
+		// Heading sizes
+		$heading-scale: 0.3; // heading step size in em
+		$max-heading: 5; // max heading size (unlikely to use smaller than h4 or h5)
+		@for $i from 1 through $max-heading {
+			h#{$i} {
+				font-size: 1em + $heading-scale * ($max-heading - $i);
+			}
+		}
 	}
 }
 
