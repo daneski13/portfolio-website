@@ -11,6 +11,7 @@ tag: Data Analysis
 
 <script>
     import Anchor from '$lib/components/markdown/Anchor.svelte';
+    import Tableau from '$lib/components/markdown/Tableau.svelte';
 </script>
 
 **Technologies:**
@@ -23,6 +24,8 @@ tag: Data Analysis
 This project analyzed booking data from two hotels - a city hotel and a resort - to gain insights into booking behaviors and offer potential business recommendations. This was my final project and presentation for the MIS 420 (Business Intelligence) course at Washington State University. The dataset used can be found <Anchor href="https://www.kaggle.com/jessemostipak/hotel-booking-demand" rel="external">here</Anchor>.
 
 This dataset was uploaded to Microsoft SQL Server, and I wrote an SQL stored procedure to prepare the data for analysis, which included adding several new columns for additional metrics. Data was extracted into Tableau via the stored procedure and a few additional aggregate metrics were created. Data was then analyzed via a Tableau Data Story.
+
+<Tableau url="https://public.tableau.com/views/HotelBookingsEDA-MIS420FinalProject/HotelBookings"/>
 
 ## Questions
 
