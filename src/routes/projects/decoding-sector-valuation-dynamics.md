@@ -1,11 +1,11 @@
 ---
 title: Decoding Sector Valuation Dynamics
 date: '2024-04-16'
-updated: '2024-04-29'
+updated: '2024-05-28'
 card: /projects/decoding-sector-valuation-dynamics/card.webp
 cover: /projects/decoding-sector-valuation-dynamics/cover.webp
 description: 'Honors Thesis - Decoding Sector Valuation Dynamics'
-proj_url: /projects/decoding-sector-valuation-dynamics/Decoding Sector Valuation Dynamics.pdf
+proj_url: https://github.com/daneski13/Decoding-Sector-Valuation-Dynamics
 tag: Research, Machine Learning, Regression Analysis
 ---
 
@@ -33,8 +33,6 @@ SHAP, SciPy, Statsmodels, NumPy, CuPy
 ---
 
 My honors thesis, "Decoding Sector Valuation Dynamics," explores the drivers of equity valuations within Global Industry Classification Standard (GICS) sectors. It takes the form of a predictive analytics project, where I utilize company fundamentals, economic indicators, and various commodities to explain the variance in stock returns. I conducted the project using Python, employing multivariate regression and gradient-boosted decision tree models within Jupyter notebooks. The final report was composed in LaTeX.
-
-**Note that this is a draft document, the final version and associated code will be uploaded upon completion of revisions following advisor feedback and the thesis defense.**
 
 ## Précis
 
