@@ -5,9 +5,10 @@
 </script>
 
 <svelte:head>
-	<title>Dane Skalski - Portfolio</title>
-	<meta name="description" content="Portfolio website showcasing my work." />
-	<meta property="og:title" content="Dane Skalski - Portfolio" />
+	<title>Dane Skalski</title>
+	<meta name="description" content="Personal website showcasing my projects." />
+	<meta property="og:title" content="Dane Skalski" />
+	<meta property="og:description" content="Personal website showcasing my projects." />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content="https://daneskalski.com/" />
 	<meta property="og:image" content="https://daneskalski.com/cover.webp" />

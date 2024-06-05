@@ -1,15 +1,15 @@
 ---
 title: This Website
 date: '2022-09-23'
-updated: '2023-01-25'
-card: /projects/portfolio-website/card.webp
-cover: /projects/portfolio-website/cover.webp
-description: This website, my portfolio where I showcase my work.
-proj_url: https://github.com/daneski13/portfolio-website
+updated: '2024-06-05'
+card: /projects/personal-website/card.webp
+cover: /projects/personal-website/cover.webp
+description: This website, my personal site where I showcase my work.
+proj_url: https://github.com/daneski13/personal-website
 tag: Web
 ---
 
-My portfolio site.
+My personal site.
 
 **Technologies:**
 
