@@ -4,10 +4,11 @@ export const prerender = true;
 export const GET = async () => {
 	const allProjects = await fetchMarkdownProjects();
 	var projects = allProjects.map(({ meta, path }) => {
+		let date = meta.isUpdated ? meta.updated : meta.date;
 		return `
 		<url>
 			<loc>https://daneskalski.com${path}/</loc>
-			<lastmod>${meta.updated}</lastmod>
+			<lastmod>${date}</lastmod>
 			<priority>0.8</priority>
 		</url>`;
 	}).join('');
@@ -22,6 +23,10 @@ export const GET = async () => {
 			xmlns:image="https://www.google.com/schemas/sitemap-image/1.1"
 			xmlns:video="https://www.google.com/schemas/sitemap-video/1.1"
 		>
+		<url>
+			<loc>https://daneskalski.com/</loc>
+			<priority>0.8</priority>
+		</url>
 			${projects}
 		</urlset>`.trim(),
 		{
