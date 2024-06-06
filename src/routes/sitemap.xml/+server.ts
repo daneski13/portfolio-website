@@ -2,16 +2,21 @@ import { fetchMarkdownProjects } from '$lib/fetchMarkdownProjects';
 export const prerender = true;
 
 export const GET = async () => {
+	const today = new Date().toISOString().split('T')[0];
+
 	const allProjects = await fetchMarkdownProjects();
-	var projects = allProjects.map(({ meta, path }) => {
-		let date = meta.isUpdated ? meta.updated : meta.date;
-		return `
+	const projects = allProjects
+		.map(({ meta, path }) => {
+			let date = meta.isUpdated ? meta.updated : meta.date;
+			return `
 		<url>
 			<loc>https://daneskalski.com${path}/</loc>
 			<lastmod>${date}</lastmod>
 			<priority>0.8</priority>
 		</url>`;
-	}).join('');
+		})
+		.join('');
+
 	return new Response(
 		`
 		<?xml version="1.0" encoding="UTF-8" ?>
@@ -25,6 +30,7 @@ export const GET = async () => {
 		>
 		<url>
 			<loc>https://daneskalski.com/</loc>
+			<lastmod>${today}</lastmod>
 			<priority>0.8</priority>
 		</url>
 			${projects}
@@ -35,4 +41,4 @@ export const GET = async () => {
 			}
 		}
 	);
-}
+};

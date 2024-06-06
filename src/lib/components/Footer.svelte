@@ -1,5 +1,9 @@
+<script lang="ts">
+	const year = new Date().getFullYear();
+</script>
+
 <footer class="footer">
-	<p class="footer__copyright">&#169; 2024 Dane Skalski</p>
+	<p class="footer__copyright">&#169; {year} Dane Skalski</p>
 </footer>
 
 <style lang="scss">
