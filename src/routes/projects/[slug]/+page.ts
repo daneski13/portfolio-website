@@ -1,5 +1,6 @@
 export const prerender = true;
 
+import { get } from 'svelte/store';
 import type { ProjectData } from './data';
 
 function convertDate(date: string) {
@@ -13,7 +14,21 @@ function convertDate(date: string) {
 	});
 }
 
-export async function load({ params }) {
+async function getNextPrevProject(slug: string, fetch) {
+	const response = await fetch(`/api/projects`);
+	const projects = await response.json();
+
+	const current = projects.findIndex((project) => project.path.slice(10) === slug);
+	let next = projects[current - 1] || undefined;
+	let prev = projects[current + 1] || undefined;
+
+	next = next && { path: next.path + '/', title: next.meta.title };
+	prev = prev && { path: prev.path + '/', title: prev.meta.title };
+
+	return { next, prev };
+}
+
+export async function load({ params, fetch }) {
 	const post = await import(`../${params.slug}.md`);
 	const content = post.default;
 	const meta = post.metadata;
@@ -38,5 +53,7 @@ export async function load({ params }) {
 		slug: params.slug
 	};
 
-	return information;
+	let nextPrev = await getNextPrevProject(params.slug, fetch);
+
+	return { information, nextPrev };
 }

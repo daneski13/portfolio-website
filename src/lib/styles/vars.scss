@@ -3,6 +3,8 @@
 	--comp-color: hsl(16, 100%, 70%);
 	--primary-color-opacity: hsla(196, 100%, 70%, 0.5);
 	--background-color: #f9f9f9;
+	--dark-grey: rgb(66, 66, 66);
+	--light-grey: #bdbdbd;
 	--margin-left-right: 8vw;
 	--header-height: 5.75rem;
 	min-width: 280px;
@@ -22,7 +24,7 @@
 		border-radius: 1px;
 		width: 90%;
 		left: 5%;
-		background-color: #bdbdbd;
+		background-color: var(--light-grey);
 		margin-top: 1rem;
 	}
 

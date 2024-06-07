@@ -1,9 +1,10 @@
 <script lang="ts">
 	import 'prism-themes/themes/prism-ghcolors.min.css';
-	import type { ProjectData } from './data';
 
-	export let data: ProjectData;
-	const { content, title, date, isUpdated, updated, cover, description, proj_url, url } = data;
+	export let data;
+	let { information, nextPrev } = data;
+	const { content, title, date, isUpdated, updated, cover, description, proj_url, url } =
+		information;
 </script>
 
 <svelte:head>
@@ -36,6 +37,34 @@
 			<svelte:component this={content} />
 		</div>
 	</article>
+	{#if nextPrev.next || nextPrev.prev}
+		<nav class="nav">
+			<div class="nav__container">
+				{#if nextPrev.prev}
+					<a class="nav__item nav__item__prev" href={nextPrev.prev.path} target="_self">
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+							<path
+								fill-rule="evenodd"
+								d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0"
+							/>
+						</svg>
+						<p style="color:var(--comp-color);">{nextPrev.prev.title}</p>
+					</a>
+				{/if}
+				{#if nextPrev.next}
+					<a class="nav__item nav__item__next" href={nextPrev.next.path} target="_self">
+						<p style="color:var(--comp-color);">{nextPrev.next.title}</p>
+						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+							<path
+								fill-rule="evenodd"
+								d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"
+							/>
+						</svg>
+					</a>
+				{/if}
+			</div>
+		</nav>
+	{/if}
 </main>
 
 <style lang="scss">
@@ -73,7 +102,7 @@
 				width: 30%;
 				max-width: 15em;
 				height: 0.15em;
-				background-color: rgb(191, 191, 191);
+				background-color: var(--light-grey);
 				margin: -1em 0;
 				border-radius: 3px;
 			}
@@ -86,7 +115,7 @@
 			&__source {
 				align-self: center;
 				font-size: 0.8em;
-				background-color: rgb(66, 66, 66);
+				background-color: var(--dark-grey);
 				padding: 0.5rem 1rem;
 				border-radius: 100px;
 				color: white;
@@ -115,7 +144,7 @@
 
 		// Horizontal line style
 		:global(hr) {
-			background-color: rgb(76, 76, 76);
+			background-color: var(--dark-grey);
 			border-width: 0;
 			border-radius: 1rem;
 			height: 2px;
@@ -172,6 +201,53 @@
 			max-width: 700px;
 			margin-left: auto;
 			margin-right: auto;
+		}
+	}
+
+	.nav {
+		@include margin-horiz;
+		padding: 0;
+		padding-top: 3rem;
+
+		&__container {
+			--gap: 10px;
+			display: flex;
+			justify-content: space-between;
+			gap: var(--gap);
+		}
+
+		&__item {
+			@include flex-center-vert;
+			border: var(--dark-grey) 3px solid;
+			border-radius: 10px;
+			width: calc(50% - var(--gap) / 2);
+			padding: 0.5rem;
+
+			&:hover {
+				svg {
+					fill: var(--primary-color);
+				}
+				border-color: var(--primary-color);
+			}
+
+			svg {
+				min-width: 2rem;
+				max-width: 2rem;
+				height: auto;
+				fill: var(--dark-grey);
+				margin: 0;
+				padding: 0;
+			}
+
+			p {
+				margin: 0;
+				padding: 0;
+			}
+
+			&__next {
+				justify-content: flex-end;
+				margin-left: auto;
+			}
 		}
 	}
 </style>

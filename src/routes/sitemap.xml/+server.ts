@@ -1,5 +1,5 @@
-import { fetchMarkdownProjects } from '$lib/fetchMarkdownProjects';
 export const prerender = true;
+import { fetchMarkdownProjects } from '$lib/fetchMarkdownProjects';
 
 export const GET = async () => {
 	const today = new Date().toISOString().split('T')[0];

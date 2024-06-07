@@ -1,3 +1,4 @@
+export const prerender = true;
 import { json } from '@sveltejs/kit';
 import { fetchMarkdownProjects } from '$lib/fetchMarkdownProjects';
 
