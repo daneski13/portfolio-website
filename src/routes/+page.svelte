@@ -45,15 +45,16 @@
 
 			<div class="about__blurb">
 				<p>
-					I am an undergraduate student studying Management Information Systems and Finance
-					graduating May 2024. I have a passion for technology and enjoy working on projects
-					utilizing my analytical mindset.
+					I am an analyst in the financial services industry by trade and a hobbyist
+					developer/engineer. I grew up near Seattle, Washington and now live in Dallas, Texas. I
+					graduated from Washington State University in 2024, majoring in both Finance and
+					Management Information Systems. I pride myself on autodidactism, with interests in data
+					and computer science, machine learning, and artificial intelligence.
 				</p>
 				<p>
-					I'm also an autodidactic with interests in data analysis, data science, computer science,
-					statistics, machine learning, and artificial intelligence. I enjoy movies and television
-					shows, traveling, playing golf, cooking, fitness, and spending time with friends and
-					family.
+					I'm a movie, television, travel, and (Italian) food enthusiast. When not pretending to be
+					a professional chef, immersed in a side project, or indulging in film, I can be found at
+					the gym, playing golf, or enjoying the outdoors.
 				</p>
 			</div>
 		</section>
